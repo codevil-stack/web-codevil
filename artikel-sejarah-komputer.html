@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolusi Panjang Sejarah Komputer - Sejarah Teknologi - CoDEVIL</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animation on Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black antialiased">
+
+    <!-- 1. NAVIGATION BAR (Mundur dari Atas) -->
+    <div class="sticky top-0 z-50 bg-zinc-50/20 backdrop-blur-lg pt-2 pb-2" data-aos="fade-down" data-aos-duration="800">        
+        <nav class="bg-black/90 backdrop-blur-xl border border-zinc-900 rounded-xl max-w-7xl mx-auto px-0 shadow-xl ml-2 mr-2">        
+            <div class="px-3 py-2 flex justify-between items-center">                        
+            <!-- Logo Brand -->            
+            <a href="#" class="transition duration-300 hover:opacity-80">                
+                <img src="img/logo/evil.png" alt="Evildaemon Studio" class="h-[30px]">            
+            </a>            
+            
+                <div class="hidden md:flex space-x-8 font-semibold text-sm text-zinc-400 tracking-wide">                
+                    <a href="index.html#services" class="hover:text-white transition">Layanan</a>                
+                    <a href="index.html#portfolio" class="hover:text-white transition">Portfolio</a>                
+                    <a href="index.html#blog" class="text-white relative py-1.5 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-white transition">Artikel</a>                
+                    <a href="index.html#pricing" class="hover:text-white transition">Harga</a>            
+                </div>                        
+                <a href="index.html#contact" class="bg-white hover:bg-zinc-200 text-black px-6 py-2.5 rounded-xl font-bold text-sm tracking-wide transition duration-300 shadow-sm transform hover:-translate-y-0.5">                
+                    Konsultasi Gratis            
+                </a>                    
+            </div>    
+        </nav>
+    </div>
+
+    <!-- 2. ARTICLE HERO HEADER -->
+    <header class="relative py-20 overflow-hidden border-b border-zinc-100">
+        <div class="absolute inset-0 z-0 bg-[url('img/bg/bg.png')] bg-cover bg-center opacity-[0.02] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <!-- Badge Kategori -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-zinc-100 border border-zinc-200 text-zinc-800 rounded-full text-xs font-bold uppercase tracking-wider mb-6" data-aos="fade-up" data-aos-duration="700">
+                <i data-lucide="history" class="w-3.5 h-3.5 text-black"></i> Sejarah Teknologi
+            </div>
+            <!-- Judul Utama -->
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-black leading-tight mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                Evolusi Panjang Sejarah Komputer dari Alat Hitung ke Era Cloud
+            </h1>
+            <!-- Sub-judul / Ringkasan -->
+            <p class="text-zinc-500 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                Kilas balik perkembangan perangkat komputasi dan bagaimana cara kerjanya membentuk ekosistem web modern saat ini.
+            </p>
+            <!-- Meta Data Penulis -->
+            <div class="flex items-center justify-center gap-3 text-sm text-zinc-400 font-semibold" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <span class="text-black">Oleh: Indra</span>
+                <span class="text-zinc-200">•</span>
+                <span>19 Mei 2026</span>
+                <span class="text-zinc-200">•</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> 6 Menit Baca</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. MAIN ARTICLE CONTENT & SIDEBAR -->
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- KOLOM KIRI: ISI ARTIKEL (Luas: 8 Kolom) -->
+            <div class="lg:col-span-8 space-y-8 text-zinc-700 text-base md:text-lg leading-relaxed font-medium">
+                <!--mainimage-->
+                <div class="aspect-video bg-zinc-100 rounded-3xl overflow-hidden border border-zinc-200 mb-10 shadow-xs relative group" data-aos="fade-up" data-aos-duration="800">
+                    <!-- Gambar Asli Linus dengan optimasi layout -->
+                    <img src="img/artikel/computer.jpg" 
+                         alt="Server Linux" 
+                         class="w-full h-full object-cover object-center filter grayscale contrast-125 hover:grayscale-0 transition duration-500 ease-in-out">
+                    
+                    <!-- Overlay premium tipis pas di-hover (opsional, biar senada sama tema CoDEVIL) -->
+                    <div class="absolute inset-0 bg-black/5 opacity-100 group-hover:opacity-0 transition duration-500 pointer-events-none"></div>
+                </div>
+
+                <!-- Paragraf Pembuka -->
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Komputer yang Anda gunakan hari ini untuk menjelajahi internet, bekerja, atau membangun sebuah website tidak lahir begitu saja. Jauh sebelum era prosesor mikro yang super tipis dan komputasi awan (*cloud computing*), komputer mengawali jalannya dari sebuah konsep yang sangat sederhana: alat hitung mekanis untuk mempermudah matematika dasar manusia.
+                </p>
+
+                <!-- Sub-Heading 1 -->
+                <h2 class="text-2xl font-black text-black tracking-tight pt-4" data-aos="fade-up" data-aos-duration="800">
+                    Dari Abakus Menuju Mesin Analitikal Charles Babbage
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Ribuan tahun lalu, manusia mengandalkan abakus (sempoa) sebagai alat bantu hitung. Namun, lompatan besar sejarah teknologi dimulai pada abad ke-19 ketika <span class="font-bold text-black">Charles Babbage</span> merancang *Analytical Engine*. Meskipun sepenuhnya mekanis dan menggunakan roda gigi, mesin ini memuat prinsip dasar komputer modern: adanya bagian input, prosesor (mill), memori (store), dan output.
+                </p>
+
+                <!-- Sub-Heading 2 -->
+                <h2 class="text-2xl font-black text-black tracking-tight pt-4" data-aos="fade-up" data-aos-duration="800">
+                    Era Transistor dan Kelahiran Ekosistem Internet
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Penemuan transistor pada pertengahan abad ke-20 mengubah segalanya. Komputer yang awalnya berukuran sebesar ruangan penuh dan mengonsumsi daya listrik raksasa (seperti ENIAC), menyusut drastis menjadi sirkuit terpadu (microchip). Revolusi perangkat keras inilah yang membuka jalan bagi komputer pribadi (PC) di tahun 1980-an, disusul lahirnya World Wide Web (WWW) yang mengubah fungsi komputer dari alat hitung murni menjadi alat komunikasi global.
+                </p>
+
+                <!-- Custom Blockquote -->
+                <blockquote class="border-l-4 border-black bg-zinc-50 p-6 rounded-r-2xl my-6 italic text-zinc-600 font-medium" data-aos="fade-up" data-aos-duration="800">
+                    "Komputer bukan lagi sekadar alat fisik yang ada di atas meja kita, melainkan infrastruktur tak kasat mata yang melayang di jaringan cloud global."
+                </blockquote>
+
+                <!-- Sub-Heading 3 -->
+                <h2 class="text-2xl font-black text-black tracking-tight pt-4" data-aos="fade-up" data-aos-duration="800">
+                    Hari Ini: Selamat Datang di Era Cloud Computing
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Kini, evolusi tersebut telah mencapai puncaknya di **Era Cloud**. Kita tidak perlu lagi memiliki superkomputer fisik di rumah untuk menjalankan komputasi berat. Semua data, aplikasi, dan sistem *backend* website modern disimpan di pusat data terdistribusi yang bisa diakses secara instan dari mana saja. Cara kerja inilah yang membentuk ekosistem web modern saat ini: fleksibel, cepat, dan tanpa batas.
+                </p>
+
+                <!-- Kesimpulan / Hubungan ke Jualan Jasa Lu -->
+                <div class="p-8 bg-zinc-50 border border-zinc-200 rounded-3xl mt-12" data-aos="fade-up" data-aos-duration="800">
+                    <h4 class="text-lg font-bold text-black mb-2 flex items-center gap-2">
+                        <i data-lucide="cloud-lightning" class="w-5 h-5 text-black"></i> Catatan dari CoDEVIL
+                    </h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-medium">
+                        Memahami sejarah teknologi membantu kami di CoDEVIL menyadari bahwa masa depan web terletak pada efisiensi integrasi cloud. Itulah mengapa setiap sistem yang kami bangun dioptimalkan untuk arsitektur cloud modern—memastikan website bisnis Anda tidak hanya cepat diakses hari ini, tapi juga siap menghadapi skalabilitas teknologi masa depan.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- KOLOM KANAN: SIDEBAR ARTIKEL TERKAIT (Luas: 4 Kolom) -->
+            <aside class="lg:col-span-4 space-y-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                
+                <!-- Kotak Info Penulis -->
+                <div class="bg-zinc-50 border border-zinc-200 p-6 rounded-3xl">
+                    <h3 class="text-sm font-bold text-black uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i data-lucide="user" class="w-4 h-4"></i> Penulis Konten
+                    </h3>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center font-black text-lg shadow-sm">
+                            I
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-base">Indra</h4>
+                            <p class="text-xs text-zinc-400 font-semibold mt-0.5">Tech History Analyst</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Widget Artikel Lain -->
+                <div class="border border-zinc-200/80 p-6 rounded-3xl space-y-4">
+                    <h3 class="text-sm font-bold text-black uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i data-lucide="bookmark" class="w-4 h-4"></i> Artikel Terkait
+                    </h3>
+                    
+                    <!-- Item Artikel Terkait 1 -->
+                    <a href="artikel-linus.html" class="block p-3 hover:bg-zinc-50 rounded-2xl border border-transparent hover:border-zinc-200 transition duration-200 group">
+                        <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Tokoh IT</span>
+                        <h4 class="font-bold text-black text-sm mt-1 leading-snug group-hover:text-zinc-600 transition">
+                            Mengenal Linus Torvalds, Sang Kreator Di Balik Revolusi Linux
+                        </h4>
+                    </a>
+
+                    <!-- Item Artikel Terkait 2 -->
+                    <a href="artikel-linux-server.html" class="block p-3 hover:bg-zinc-50 rounded-2xl border border-transparent hover:border-zinc-200 transition duration-200 group">
+                        <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Server & Security</span>
+                        <h4 class="font-bold text-black text-sm mt-1 leading-snug group-hover:text-zinc-600 transition">
+                            Kenapa Linux Begitu Kuat dan Menjadi Jantung Server Dunia?
+                        </h4>
+                    </a>
+                </div>
+
+                <!-- Tombol Kembali Ke Beranda -->
+                <a href="index.html" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-black hover:bg-zinc-800 text-white text-sm font-bold rounded-2xl transition duration-300 shadow-sm">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Beranda
+                </a>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (PREMIUM MONOCHROME SOLID BLACK) -->
+    <footer class="relative overflow-hidden bg-black text-zinc-500 text-xs py-12 border-t border-zinc-900 text-center">
+        <!-- Pendar Cahaya Abu-abu Super Tipis di Latar Belakang biar ga mati total -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -z-0 h-40 w-96 rounded-full bg-zinc-800/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center gap-6">
+            
+            <!-- Logo / Nama Brand Jasa Web Anda (Premium Monochrome) -->
+            <div class="text-sm font-black tracking-[0.25em] text-white uppercase pl-[0.25em]">
+                CoDEVIL
+            </div>
+
+            <!-- Link Navigasi Singkat (Footer Menu) -->
+            <div class="flex flex-wrap justify-center gap-6 text-zinc-400 font-medium">
+                <a href="#services" class="hover:text-white transition duration-300">Services</a>
+                <a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a>
+                <a href="#process" class="hover:text-white transition duration-300">Workflow</a>
+                <a href="#pricing" class="hover:text-white transition duration-300">Pricing</a>
+                <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
+            </div>
+
+            <!-- Garis Pembatas Tipis Interior Monokrom -->
+            <div class="w-16 h-[1px] bg-gradient-to-r from-transparent via-zinc-800 to-transparent my-1"></div>
+
+            <!-- Hak Cipta / Copyright -->
+            <p class="tracking-wide text-zinc-500 font-medium">
+                &copy; 2026 <span class="text-white font-bold">CoDEVIL</span>. Hak Cipta Dilindungi.
+            </p>
+            
+        </div>
+    </footer>
+
+    <!-- INITIALIZATION SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Jalankan animasi AOS
+        AOS.init({
+            once: true // Animasi cuma jalan sekali pas di-scroll kebawah
+        });
+        // Aktifkan Ikon Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
