@@ -10,14 +10,14 @@ function openVideoModal(videoUrl) {
     modal.classList.remove('pointer-events-none');
 
     // 3. Amankan area modal agar klik internal tidak bocor ke luar
-    modalContent.onclick = function(e) {
+    modalContent.onclick = function (e) {
         e.stopPropagation();
     };
 
     // 4. Jalankan animasi blur dan pop-up secara mulus
     modal.classList.remove('opacity-0', 'backdrop-blur-0');
     modal.classList.add('opacity-100', 'backdrop-blur-xl');
-    
+
     modalContent.classList.remove('scale-95', 'opacity-0');
     modalContent.classList.add('scale-100', 'opacity-100');
 
@@ -48,27 +48,27 @@ function closeVideoModal() {
 }
 
 function toggleFaq(button) {
-        // Ambil elemen konten (div jawaban) yang ada persis di bawah button
-        const content = button.nextElementSibling;
-        // Ambil indikator tanda "+" atau "-" di dalam tombol
-        const indicator = button.querySelector('span:last-child');
-        
-        // Cek apakah kontainer sedang terbuka
-        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-            // Kalau terbuka, kita tutup dengan set maxHeight ke 0
-            content.style.maxHeight = "0px";
-            indicator.textContent = "+";
-            indicator.style.transform = "rotate(0deg)";
-        } else {
-            // Kalau tertutup, kita hitung tinggi asli kontennya lalu set ke maxHeight
-            content.style.maxHeight = content.scrollHeight + "px";
-            indicator.textContent = "−"; // Memakai tanda minus tipografi premium
-            indicator.style.transform = "rotate(180deg)";
-        }
+    // Ambil elemen konten (div jawaban) yang ada persis di bawah button
+    const content = button.nextElementSibling;
+    // Ambil indikator tanda "+" atau "-" di dalam tombol
+    const indicator = button.querySelector('span:last-child');
+
+    // Cek apakah kontainer sedang terbuka
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        // Kalau terbuka, kita tutup dengan set maxHeight ke 0
+        content.style.maxHeight = "0px";
+        indicator.textContent = "+";
+        indicator.style.transform = "rotate(0deg)";
+    } else {
+        // Kalau tertutup, kita hitung tinggi asli kontennya lalu set ke maxHeight
+        content.style.maxHeight = content.scrollHeight + "px";
+        indicator.textContent = "−"; // Memakai tanda minus tipografi premium
+        indicator.style.transform = "rotate(180deg)";
     }
+}
 
 // Jalankan inisialisasi pihak ketiga setelah DOM web benar-benar siap
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // 1. Inisialisasi Ikon Lucide terlebih dahulu
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
@@ -83,3 +83,41 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+// Deteksi lebar viewport sebelum AOS di-init
+function adjustAosBehavior() {
+    const width = window.innerWidth;
+    const cards = document.querySelectorAll('[data-aos]');
+
+    cards.forEach(card => {
+        // Jika layar di atas mobile (md breakpoint / >= 768px)
+        if (width >= 768) {
+            if (card.hasAttribute('data-aos-md')) {
+                card.setAttribute('data-aos', card.getAttribute('data-aos-md'));
+            }
+            if (card.hasAttribute('data-aos-md-delay')) {
+                card.setAttribute('data-aos-delay', card.getAttribute('data-aos-md-delay'));
+            }
+        }
+    });
+}
+
+// Eksekusi sebelum inisialisasi utama AOS
+adjustAosBehavior();
+
+function adjustProcessAos() {
+    const width = window.innerWidth;
+    const elements = document.querySelectorAll('#process [data-aos]');
+    elements.forEach(el => {
+        if (width >= 768) {
+            if (el.hasAttribute('data-aos-md')) {
+                el.setAttribute('data-aos', el.getAttribute('data-aos-md'));
+            }
+            if (el.hasAttribute('data-aos-md-delay')) {
+                el.setAttribute('data-aos-delay', el.getAttribute('data-aos-md-delay'));
+            }
+        }
+    });
+}
+adjustProcessAos();

@@ -23,22 +23,29 @@
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- WRAPPER UNTUK MENUTUPI BOCOR DI ATAS NAVBAR -->
-    <div class="sticky top-0 z-50 bg-zinc-50/10 backdrop-blur-md pt-3 pb-3" data-aos="fade-down" data-aos-duration="800">
-        <nav class="bg-zinc-950/90 backdrop-blur-2xl border border-zinc-900 rounded-2xl max-w-7xl mx-auto px-4 shadow-2xl ml-4 mr-4 xl:mx-auto">
-            <div class="px-2 py-2 flex justify-between items-center">
+    <div class="sticky top-0 z-50 bg-zinc-50/10 backdrop-blur-md pt-3 pb-3" data-aos="fade-down"
+        data-aos-duration="800">
+        <nav
+            class="bg-zinc-950/90 backdrop-blur-2xl border border-zinc-900 rounded-2xl max-w-7xl mx-auto px-4 shadow-2xl ml-4 mr-4 xl:mx-auto">
+            <div class="px-1 py-2 flex justify-between items-center">
 
-                <a href="index.html" class="text-sm font-black tracking-[0.25em] text-white uppercase font-mono transition duration-300 hover:opacity-80">
-                    <img src="img/logo/evil.png" alt="CoDEVIL" class="h-[40px] md:h-[45px] object-contain">
+                <a href="index.html"
+                    class="text-sm font-black tracking-[0.25em] text-white uppercase font-mono transition duration-300 hover:opacity-80">
+                    <img src="img/logo/evil.png" alt="CoDEVIL" class="h-[30px] md:h-[30px] object-contain">
                 </a>
 
-                <div class="hidden md:flex space-x-8 font-mono text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                <div
+                    class="hidden md:flex space-x-8 font-mono text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
                     <a href="index.html#services" class="hover:text-white transition duration-200">Services //</a>
                     <a href="index.html#portfolio" class="hover:text-white transition duration-200">Portfolio //</a>
-                    <a href="index.html#blog" class="text-white relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-white transition">Journal //</a>
+                    <a href="index.html#blog"
+                        class="text-white relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-white transition">Journal
+                        //</a>
                     <a href="index.html#pricing" class="hover:text-white transition duration-200">Pricing //</a>
                 </div>
 
-                <a href="index.html#contact" class="bg-white hover:bg-zinc-200 text-black px-5 py-2 rounded-xl font-bold font-mono text-[11px] tracking-wide transition duration-300 transform hover:-translate-y-0.5 shadow-md shadow-black/20">
+                <a href="index.html#contact"
+                    class="bg-white hover:bg-zinc-200 text-black px-5 py-2 rounded-xl font-bold font-mono text-[11px] tracking-wide transition duration-300 transform hover:-translate-y-0.5 shadow-md shadow-black/20">
                     INIT_PROJECT //
                 </a>
 
@@ -48,65 +55,82 @@
 
     <!-- 1. HERO SECTION (PREMIUM MONOCHROME MINIMALIST WITH BG IMAGE) -->
     <!-- Gw tambahin data-aos di container utama biar background juga nge-fade -->
-    <div class="relative overflow-hidden bg-white border-b border-zinc-100" data-aos="fade" data-aos-duration="600">
+    <div class="relative overflow-hidden bg-white border-b border-zinc-100 py-16 md:py-28" data-aos="fade"
+        data-aos-duration="600">
 
-        <div
-            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="img/bg/tech.webp" alt="Tech Pattern Background"
+                class="w-full h-full object-cover object-left opacity-[0.3] filter grayscale">
         </div>
 
-        <header class="max-w-7xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-12 gap-12 items-center relative z-10"
-            data-aos="fade-up">
+        <div class="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-white/50 to-white pointer-events-none">
+        </div>
 
-            <div class="md:col-span-7 space-y-6">
-                <div
-                    class="inline-flex items-center gap-2 text-[10px] font-mono font-bold tracking-wider text-zinc-500 uppercase bg-zinc-50 border border-zinc-200/80 px-2.5 py-1 rounded-md">
-                    <span class="flex h-1.5 w-1.5 rounded-full bg-black animate-pulse"></span>
-                    <span>Available for Q2 2026 Projects</span>
-                </div>
+        <div
+            class="absolute inset-0 z-2 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:24px_36px] pointer-events-none">
+        </div>
 
-                <h1 class="text-4xl md:text-6xl font-black text-black leading-none tracking-tight">
-                    Kami Membangun Website Berkecepatan Tinggi. <span class="text-zinc-400">Tanpa Kompromi.</span>
-                </h1>
+        <header class="max-w-5xl mx-auto px-6 relative z-10 flex flex-col items-center text-center" data-aos="fade-up">
 
-                <p class="text-zinc-600 text-base md:text-lg leading-relaxed font-medium max-w-xl">
-                    Hentikan penggunaan template pasaran yang lambat dan kaku. Kami men-deploy infrastruktur web kustom
-                    yang dirancang khusus untuk stabilitas jangka panjang, kecepatan akses maksimal, dan konversi bisnis
-                    Anda.
-                </p>
-
-                <div class="pt-4 flex flex-wrap gap-4 text-sm">
-                    <a href="#contact"
-                        class="bg-black hover:bg-zinc-800 text-white px-8 py-4 rounded-xl font-bold transition duration-300 w-full sm:w-auto text-center transform hover:-translate-y-0.5 shadow-sm flex items-center justify-center gap-2">
-                        <span>Konsultasi Proyek</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                    <a href="#portfolio"
-                        class="border border-zinc-200 bg-white hover:bg-zinc-50 text-black px-8 py-4 rounded-xl font-bold transition duration-300 w-full sm:w-auto text-center transform hover:-translate-y-0.5">
-                        Lihat Portofolio
-                    </a>
-                </div>
+            <div
+                class="inline-flex items-center gap-2 text-[10px] font-mono font-bold tracking-wider text-zinc-500 uppercase bg-zinc-50 border border-zinc-200/80 px-2.5 py-1 rounded-md mb-8 shadow-inner">
+                <span class="flex h-1.5 w-1.5 rounded-full bg-black animate-pulse"></span>
+                <span>Available for Q2 2026 Projects</span>
             </div>
 
-            <div class="md:col-span-5 bg-black rounded-2xl border border-zinc-900 shadow-2xl p-5 relative overflow-hidden font-mono text-xs text-zinc-500 leading-relaxed"
-                data-aos="fade-up" data-aos-delay="200">
+            <h1 class="text-4xl md:text-6xl font-black text-black leading-none tracking-tight max-w-4xl">
+                Kami Membangun Website Berkecepatan Tinggi. <span class="text-zinc-400">Tanpa Kompromi.</span>
+            </h1>
 
-                <div class="flex items-center space-x-2 border-b border-zinc-900 pb-3 mb-4">
+            <p class="text-zinc-600 text-base md:text-lg leading-relaxed font-medium max-w-2xl mt-6">
+                Hentikan penggunaan template pasaran yang lambat dan kaku. Kami men-deploy infrastruktur web kustom yang
+                dirancang khusus untuk stabilitas jangka panjang, kecepatan akses maksimal, dan konversi bisnis Anda.
+            </p>
+
+            <div class="w-full max-w-3xl mt-12 mb-10 bg-zinc-950 rounded-xl border border-zinc-900 shadow-2xl p-4 text-left font-mono text-xs text-zinc-500 relative overflow-hidden z-20"
+                data-aos="fade-up" data-aos-delay="150">
+                <div class="flex items-center space-x-2 border-b border-zinc-900 pb-2.5 mb-4">
                     <span class="w-2.5 h-2.5 rounded-full bg-zinc-800"></span>
                     <span class="w-2.5 h-2.5 rounded-full bg-zinc-800"></span>
                     <span class="w-2.5 h-2.5 rounded-full bg-zinc-800"></span>
                     <span class="text-[10px] text-zinc-600 pl-2">production-metrics.json</span>
                 </div>
 
-                <div class="space-y-1.5">
-                    <p class="text-zinc-700">// Analyzing live core web vitals...</p>
-                    <p><span class="text-white">const</span> performance = {</p>
-                    <p class="pl-4">loadTime: <span class="text-emerald-400">"0.4s"</span>,</p>
-                    <p class="pl-4">optimizations: <span class="text-emerald-400">["SSR", "Edge Cache"]</span>,</p>
-                    <p class="pl-4">securityProtocol: <span class="text-emerald-400">"Enterprise Grade"</span>,</p>
-                    <p class="pl-4">uptimeGuarantee: <span class="text-emerald-400">"99.99%"</span></p>
-                    <p>};</p>
-                    <p class="pt-2 text-zinc-700">// Systems status:</p>
-                    <p class="text-emerald-500 font-bold">✔ Deployment optimized and secure.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+                    <div class="border-r border-zinc-900/50 last:border-0 px-2">
+                        <span class="block text-zinc-600 text-[10px] font-bold uppercase tracking-wider">loadTime</span>
+                        <span class="text-emerald-400 font-bold text-sm block mt-0.5">"0.4s"</span>
+                    </div>
+                    <div class="border-r border-zinc-900/50 last:border-0 px-2">
+                        <span
+                            class="block text-zinc-600 text-[10px] font-bold uppercase tracking-wider">optimizations</span>
+                        <span class="text-emerald-400 font-bold text-[10px] block mt-1 leading-tight">["SSR", "Edge
+                            Cache"]</span>
+                    </div>
+                    <div class="border-r border-zinc-900/50 last:border-0 px-2">
+                        <span class="block text-zinc-600 text-[10px] font-bold uppercase tracking-wider">security</span>
+                        <span class="text-emerald-400 font-bold text-[11px] block mt-1">"Enterprise Grade"</span>
+                    </div>
+                    <div class="last:border-0 px-2">
+                        <span class="block text-zinc-600 text-[10px] font-bold uppercase tracking-wider">uptime</span>
+                        <span class="text-emerald-400 font-bold text-sm block mt-0.5">"99.99%"</span>
+                    </div>
                 </div>
+
+                <div class="mt-4 pt-3 border-t border-zinc-900/60 text-emerald-500 font-bold text-[11px]">
+                    ✔ Deployment optimized and secure.
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 text-sm w-full sm:w-auto relative z-20">
+                <a href="#contact"
+                    class="bg-black hover:bg-zinc-800 text-white px-8 py-4 rounded-xl font-bold transition duration-300 w-full sm:w-auto text-center transform hover:-translate-y-0.5 shadow-lg flex items-center justify-center gap-2">
+                    <span>Konsultasi Proyek</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#portfolio"
+                    class="border border-zinc-200 bg-white hover:bg-zinc-50 text-black px-8 py-4 rounded-xl font-bold transition duration-300 w-full sm:w-auto text-center transform hover:-translate-y-0.5 shadow-sm">
+                    Lihat Portofolio
+                </a>
             </div>
 
         </header>
@@ -128,15 +152,14 @@
                     Mempercepat Sistem Anda.</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-x-hidden md:overflow-visible px-1">
 
-                <div data-aos="fade-up" data-aos-duration="800">
+                <div data-aos="fade-right" data-aos-md="fade-up" data-aos-duration="800">
                     <div
-                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 h-full">
+                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 active:scale-[0.99] active:border-zinc-400 transition duration-300 h-full">
                         <div
                             class="absolute inset-0 z-0 bg-[url('img/bg/bgcard4.png')] bg-cover bg-center opacity-[0.02] pointer-events-none">
                         </div>
-
                         <div
                             class="w-12 h-12 shrink-0 bg-zinc-50 text-black border border-zinc-200 rounded-xl flex items-center justify-center group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                             <i data-lucide="zap" class="w-5 h-5"></i>
@@ -150,13 +173,12 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-md-delay="100">
                     <div
-                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 h-full">
+                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 active:scale-[0.99] active:border-zinc-400 transition duration-300 h-full">
                         <div
                             class="absolute inset-0 z-0 bg-[url('img/bg/bgcard3.png')] bg-cover bg-center opacity-[0.02] pointer-events-none">
                         </div>
-
                         <div
                             class="w-12 h-12 shrink-0 bg-zinc-50 text-black border border-zinc-200 rounded-xl flex items-center justify-center group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                             <i data-lucide="layers" class="w-5 h-5"></i>
@@ -170,13 +192,12 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div data-aos="fade-right" data-aos-md="fade-up" data-aos-duration="800" data-aos-md-delay="200">
                     <div
-                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 h-full">
+                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 active:scale-[0.99] active:border-zinc-400 transition duration-300 h-full">
                         <div
                             class="absolute inset-0 z-0 bg-[url('img/bg/bgcard2.png')] bg-cover bg-center opacity-[0.02] pointer-events-none">
                         </div>
-
                         <div
                             class="w-12 h-12 shrink-0 bg-zinc-50 text-black border border-zinc-200 rounded-xl flex items-center justify-center group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                             <i data-lucide="search" class="w-5 h-5"></i>
@@ -190,13 +211,12 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-md-delay="300">
                     <div
-                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 h-full">
+                        class="bg-white border border-zinc-200 rounded-3xl p-8 relative overflow-hidden group flex flex-col sm:flex-row items-start gap-6 text-left hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 active:scale-[0.99] active:border-zinc-400 transition duration-300 h-full">
                         <div
                             class="absolute inset-0 z-0 bg-[url('img/bg/bgcard1.webp')] bg-cover bg-center opacity-[0.02] pointer-events-none">
                         </div>
-
                         <div
                             class="w-12 h-12 shrink-0 bg-zinc-50 text-black border border-zinc-200 rounded-xl flex items-center justify-center group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                             <i data-lucide="shield-check" class="w-5 h-5"></i>
@@ -215,90 +235,95 @@
     </section>
 
     <!-- 3. ABOUT ME SECTION (PREMIUM MONOCHROME MINIMALIST) -->
-    <section id="about" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
+    <section id="about"
+        class="relative overflow-hidden bg-zinc-950 py-24 border-b border-zinc-900 selection:bg-white selection:text-black">
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="img/bg/tech1.webp" alt="Tech Pattern Background"
+                class="w-full h-full object-cover object-left opacity-[0.3] filter grayscale">
+        </div>
 
         <div
-            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
-                <div class="md:col-span-5 flex justify-center">
-                    <div class="bg-white p-3 rounded-3xl border border-zinc-200 shadow-xl shadow-zinc-100/80 relative overflow-hidden group max-w-sm w-full"
-                        data-aos="fade-up" data-aos-duration="800">
+                <div class="md:col-span-5 flex justify-start md:justify-center order-first pl-6">
+                    <div class="bg-zinc-900 p-3 rounded-3xl border border-zinc-800 shadow-2xl shadow-black/50 relative overflow-visible group max-w-sm w-[88%] sm:w-full rotate-1 md:rotate-0 hover:rotate-0 transition duration-500 ease-in-out"
+                        data-aos="fade-right" data-aos-duration="800">
 
-                        <div class="relative z-10 aspect-square w-full rounded-2xl overflow-hidden bg-zinc-50">
-                            <img src="img/profile/indra.webp" alt="Indra - Founder CoDEVIL"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 ease-in-out">
+                        <div class="relative z-10 aspect-square w-full rounded-2xl overflow-hidden bg-zinc-900">
+                            <img src="img/profile/haze.webp" alt="hazee - Founder CoDEVIL"
+                                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
+                        </div>
 
-                            <div
-                                class="absolute bottom-4 left-4 bg-black text-white text-[10px] font-mono font-bold tracking-wider px-3 py-1.5 rounded-lg border border-zinc-800 flex items-center gap-1.5">
-                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-                                <span>Independent Developer</span>
-                            </div>
+                        <div
+                            class="absolute -bottom-4 -right-4 bg-white text-black text-[10px] font-mono font-bold tracking-wider px-3 py-2 rounded-xl border border-zinc-200 flex items-center gap-1.5 shadow-xl transform group-hover:translate-x-0.5 transition duration-300">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>Independent Developer</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="md:col-span-7 text-left space-y-6">
+                <div class="md:col-span-7 text-left space-y-6 mt-6 md:mt-0">
 
                     <div data-aos="fade-up" data-aos-duration="800">
-                        <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Behind the
-                            Code</span>
-                        <h2 class="text-3xl font-black text-black tracking-tight mt-3">Satu Arsitek untuk Seluruh Sistem
+                        <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase">// Behind
+                            the Code</span>
+                        <h2 class="text-3xl font-black text-white tracking-tight mt-3">Satu Arsitek untuk Seluruh Sistem
                             Anda.</h2>
                     </div>
 
-                    <p class="text-zinc-600 text-sm md:text-base leading-relaxed font-medium" data-aos="fade-up"
+                    <p class="text-zinc-400 text-sm md:text-base leading-relaxed font-medium" data-aos="fade-up"
                         data-aos-duration="800" data-aos-delay="100">
-                        Saya mendirikan <span class="text-black font-bold">CoDEVIL</span> atas dasar satu keresahan:
+                        Saya mendirikan <span class="text-white font-bold">CoDEVIL</span> atas dasar satu keresahan:
                         industri web saat ini terlalu bergantung pada template instan yang gemuk, lambat, dan rentan
                         celah keamanan. Di sini, saya membangun ulang ekosistem digital dari tingkat fundamental.
                     </p>
 
-                    <p class="text-zinc-600 text-sm md:text-base leading-relaxed font-medium" data-aos="fade-up"
+                    <p class="text-zinc-400 text-sm md:text-base leading-relaxed font-medium" data-aos="fade-up"
                         data-aos-duration="800" data-aos-delay="200">
                         Setiap baris kode ditulis secara kustom demi menghasilkan performa rendering yang optimal. Anda
                         tidak sedang menyewa agensi dengan puluhan sales, melainkan berkolaborasi langsung dengan
                         seorang engineer yang akan mengawal arsitektur sistem Anda dari konsepsi hingga deploimen penuh.
                     </p>
 
-                    <div class="pt-6 grid grid-cols-2 gap-4 border-t border-zinc-200" data-aos="fade-up"
+                    <div class="pt-6 grid grid-cols-2 gap-4 border-t border-zinc-900" data-aos="fade-up"
                         data-aos-duration="800" data-aos-delay="300">
                         <div>
-                            <h4 class="text-xl font-mono font-black text-black">01 //</h4>
-                            <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-wider mt-1">Bespoke Custom
+                            <h4 class="text-xl font-mono font-black text-white">01 //</h4>
+                            <p class="text-zinc-500 text-[10px] font-bold uppercase tracking-wider mt-1">Bespoke Custom
                                 Code</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-mono font-black text-black">&lt; 1.0s //</h4>
-                            <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-wider mt-1">Target Response
+                            <h4 class="text-xl font-mono font-black text-white">&lt; 1.0s //</h4>
+                            <p class="text-zinc-500 text-[10px] font-bold uppercase tracking-wider mt-1">Target Response
                                 Time</p>
                         </div>
                     </div>
 
-                    <div class="pt-6 border-t border-zinc-200" data-aos="fade-up" data-aos-duration="800"
+                    <div class="pt-6 border-t border-zinc-900" data-aos="fade-up" data-aos-duration="800"
                         data-aos-delay="400">
-                        <h5 class="text-[10px] font-mono font-bold text-black uppercase tracking-wider mb-4">Core
+                        <h5 class="text-[10px] font-mono font-bold text-zinc-400 uppercase tracking-wider mb-4">// Core
                             Ecosystem</h5>
 
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-50 border border-zinc-200 text-black rounded-lg text-xs font-semibold font-mono">
+                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-900 border border-zinc-800 text-zinc-300 rounded-lg text-xs font-semibold font-mono hover:text-white hover:border-zinc-700 transition">
                                 <i data-lucide="code" class="w-3.5 h-3.5 text-zinc-500"></i> Full-Stack JS
                             </span>
                             <span
-                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-50 border border-zinc-200 text-black rounded-lg text-xs font-semibold font-mono">
+                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-900 border border-zinc-800 text-zinc-300 rounded-lg text-xs font-semibold font-mono hover:text-white hover:border-zinc-700 transition">
                                 <i data-lucide="terminal" class="w-3.5 h-3.5 text-zinc-500"></i> Python / Django
                             </span>
                             <span
-                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-50 border border-zinc-200 text-black rounded-lg text-xs font-semibold font-mono">
+                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-zinc-900 border border-zinc-800 text-zinc-300 rounded-lg text-xs font-semibold font-mono hover:text-white hover:border-zinc-700 transition">
                                 <i data-lucide="database" class="w-3.5 h-3.5 text-zinc-500"></i> MariaDB Systems
                             </span>
                             <span
-                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-black border border-black text-white rounded-lg text-xs font-semibold font-mono shadow-sm">
-                                <i data-lucide="cpu" class="w-3.5 h-3.5 text-zinc-400"></i> UNIX Environment
+                                class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-white text-black rounded-lg text-xs font-bold font-mono shadow-md transform hover:-translate-y-0.5 transition">
+                                <i data-lucide="cpu" class="w-3.5 h-3.5 text-zinc-700"></i> UNIX Environment
                             </span>
                         </div>
                     </div>
@@ -481,18 +506,21 @@
     </section>
 
     <!-- SECTION: LIVE PREVIEW LABS (PREMIUM GRID WITH IMAGES) -->
-    <section id="live-projects" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
-
+    <section id="live-projects" class="relative overflow-hidden bg-zinc-950 py-24 border-b border-zinc-900">
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="img/bg/tech1.jpg" alt="Tech Pattern Background"
+                class="w-full h-full object-cover object-left opacity-[0.3] filter grayscale">
+        </div>
         <div
-            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Live
+                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase">// Live
                     Environments</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Uji Coba Sandbox & Akses Demo
+                <h2 class="text-3xl font-black text-white tracking-tight leading-none">Uji Coba Sandbox & Akses Demo
                     Langsung.</h2>
             </div>
 
@@ -501,11 +529,9 @@
                 <div data-aos="fade-up" data-aos-duration="800">
                     <a href="https://codevil-stack.github.io/web_sepatuBekas/" target="_blank"
                         class="group bg-white border border-zinc-200 rounded-3xl p-5 shadow-xs hover:shadow-xl hover:border-zinc-300 transition duration-300 flex flex-col justify-between h-full relative overflow-hidden">
-
                         <div
                             class="absolute inset-0 z-0 bg-[url('img/bg/bgcard7.png')] bg-cover bg-center opacity-[0.01] pointer-events-none">
                         </div>
-
                         <div class="relative z-10">
                             <div
                                 class="w-full aspect-video rounded-2xl bg-zinc-50 overflow-hidden border border-zinc-200/60 relative">
@@ -515,7 +541,6 @@
                                     class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300">
                                 </div>
                             </div>
-
                             <div class="flex justify-between items-center mt-5">
                                 <span
                                     class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">E-Commerce</span>
@@ -524,13 +549,11 @@
                                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                 </span>
                             </div>
-
                             <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">
                                 SoleMate Kicks</h3>
                             <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Arsitektur toko ritel
                                 kustom dengan optimasi state managemen katalog produk secara asinkron.</p>
                         </div>
-
                         <div
                             class="mt-6 text-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white text-black text-xs font-bold py-3 rounded-xl transition duration-300 relative z-10">
                             Buka Situs Live →
@@ -541,7 +564,6 @@
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <a href="https://codevil-stack.github.io/web_umkm/" target="_blank"
                         class="group bg-white border border-zinc-200 rounded-3xl p-5 shadow-xs hover:shadow-xl hover:border-zinc-300 transition duration-300 flex flex-col justify-between h-full relative overflow-hidden">
-
                         <div class="relative z-10">
                             <div
                                 class="w-full aspect-video rounded-2xl bg-zinc-50 overflow-hidden border border-zinc-200/60 relative">
@@ -551,7 +573,6 @@
                                     class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300">
                                 </div>
                             </div>
-
                             <div class="flex justify-between items-center mt-5">
                                 <span
                                     class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">Web
@@ -561,13 +582,11 @@
                                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                 </span>
                             </div>
-
                             <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">Dapur
                                 Rasa</h3>
                             <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Sistem manajemen
                                 katering otomatis dengan penanganan antrean sistem Pre-Order terjadwal.</p>
                         </div>
-
                         <div
                             class="mt-6 text-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white text-black text-xs font-bold py-3 rounded-xl transition duration-300 relative z-10">
                             Buka Situs Live →
@@ -578,7 +597,6 @@
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="https://codevil-stack.github.io/web_photographer/" target="_blank"
                         class="group bg-white border border-zinc-200 rounded-3xl p-5 shadow-xs hover:shadow-xl hover:border-zinc-300 transition duration-300 flex flex-col justify-between h-full relative overflow-hidden">
-
                         <div class="relative z-10">
                             <div
                                 class="w-full aspect-video rounded-2xl bg-zinc-50 overflow-hidden border border-zinc-200/60 relative">
@@ -588,7 +606,6 @@
                                     class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300">
                                 </div>
                             </div>
-
                             <div class="flex justify-between items-center mt-5">
                                 <span
                                     class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">Creative
@@ -598,13 +615,11 @@
                                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                 </span>
                             </div>
-
                             <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">Aura
                                 Frame Studio</h3>
                             <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Galeri visual interaktif
                                 terintegrasi dengan modul penjadwalan pemesanan sesi waktu nyata.</p>
                         </div>
-
                         <div
                             class="mt-6 text-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white text-black text-xs font-bold py-3 rounded-xl transition duration-300 relative z-10">
                             Buka Situs Live →
@@ -613,35 +628,32 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <a href="https://link-web-art-lu.com" target="_blank"
+                    <a href="https://codevil-stack.github.io/bengkel_motor/" target="_blank"
                         class="group bg-white border border-zinc-200 rounded-3xl p-5 shadow-xs hover:shadow-xl hover:border-zinc-300 transition duration-300 flex flex-col justify-between h-full relative overflow-hidden">
-
                         <div class="relative z-10">
                             <div
                                 class="w-full aspect-video rounded-2xl bg-zinc-50 overflow-hidden border border-zinc-200/60 relative">
-                                <img src="img/assets/gallery.webp" alt="Preview Cyber-Sigilism Gallery"
+                                <img src="img/assets/bengkel_motor.webp" alt="16motor Digital Architecture"
                                     class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
                                 <div
                                     class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300">
                                 </div>
                             </div>
-
                             <div class="flex justify-between items-center mt-5">
                                 <span
-                                    class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">Digital
-                                    Art</span>
+                                    class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">Automotive
+                                    Business</span>
                                 <span
                                     class="text-zinc-400 group-hover:text-black transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300">
                                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                 </span>
                             </div>
-
-                            <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">
-                                Cyber-Sigilism Gallery</h3>
-                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Pemuatan dinamis
-                                resolusi tinggi dilengkapi proteksi enkripsi elemen inspeksi enkapsulasi aset.</p>
+                            <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">16motor
+                                Digital Interface</h3>
+                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Integrasi sistem
+                                reservasi jadwal mekanik, log rekam medis kendaraan terpusat, dan modul pemetaan
+                                diagnosa elektrikal ECU berbasis komputasi awan.</p>
                         </div>
-
                         <div
                             class="mt-6 text-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white text-black text-xs font-bold py-3 rounded-xl transition duration-300 relative z-10">
                             Buka Situs Live →
@@ -652,7 +664,6 @@
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <a href="https://link-web-rental-lu.com" target="_blank"
                         class="group bg-white border border-zinc-200 rounded-3xl p-5 shadow-xs hover:shadow-xl hover:border-zinc-300 transition duration-300 flex flex-col justify-between h-full relative overflow-hidden">
-
                         <div class="relative z-10">
                             <div
                                 class="w-full aspect-video rounded-2xl bg-zinc-50 overflow-hidden border border-zinc-200/60 relative">
@@ -662,7 +673,6 @@
                                     class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300">
                                 </div>
                             </div>
-
                             <div class="flex justify-between items-center mt-5">
                                 <span
                                     class="text-[10px] font-mono font-bold tracking-wider text-black bg-zinc-50 px-2.5 py-1 rounded-md uppercase border border-zinc-200">Web
@@ -672,14 +682,12 @@
                                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                                 </span>
                             </div>
-
                             <h3 class="text-base font-bold text-black mt-3 group-hover:text-zinc-700 transition">
                                 DriveEase Rental Systems</h3>
                             <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">Sistem manajemen
                                 logistik armada terintegrasi dengan ketersediaan live-tracking dan gerbang pembayaran.
                             </p>
                         </div>
-
                         <div
                             class="mt-6 text-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white text-black text-xs font-bold py-3 rounded-xl transition duration-300 relative z-10">
                             Buka Situs Live →
@@ -692,15 +700,19 @@
     </section>
 
     <!-- SECTION VIDEO REVIEW (3 COLUMNS GRID - PREMIUM MONOCHROME) -->
-<section id="pipeline" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
+    <section id="pipeline" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Execution Workflow</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Infrastruktur Deploimen & Alur Kerja.</h2>
+                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Execution
+                    Workflow</span>
+                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Infrastruktur Deploimen & Alur
+                    Kerja.</h2>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -708,9 +720,12 @@
                 <div class="lg:col-span-4 space-y-4" data-aos="fade-up" data-aos-duration="800">
                     <h3 class="text-lg font-bold text-black font-mono">⚡ No Black Box //</h3>
                     <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                        Setiap tahap pengerjaan terintegrasi ke repositori privat. Anda mendapatkan transparansi penuh terhadap perkembangan baris kode, arsitektur database, hingga konfigurasi server tanpa ada yang disembunyikan.
+                        Setiap tahap pengerjaan terintegrasi ke repositori privat. Anda mendapatkan transparansi penuh
+                        terhadap perkembangan baris kode, arsitektur database, hingga konfigurasi server tanpa ada yang
+                        disembunyikan.
                     </p>
-                    <div class="pt-4 flex items-center gap-4 text-zinc-400 font-mono text-[11px] font-bold uppercase tracking-wider">
+                    <div
+                        class="pt-4 flex items-center gap-4 text-zinc-400 font-mono text-[11px] font-bold uppercase tracking-wider">
                         <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
                         <span>Standardized Stack</span>
                     </div>
@@ -719,38 +734,54 @@
                 <div class="lg:col-span-8 space-y-6">
 
                     <div class="bg-white border border-zinc-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start gap-4 hover:border-zinc-400 transition duration-300"
-                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                        <span class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">01 / STAGE</span>
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <span
+                            class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">01
+                            / STAGE</span>
                         <div class="space-y-1">
                             <h4 class="text-sm font-bold text-black">Arsitektur UI/UX & Cetak Biru Sistem</h4>
-                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Penyusunan wireframe linier dan struktur navigasi. Fokus mengejar tata letak yang bersih sebelum masuk ke tahap penulisan kode.</p>
+                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Penyusunan wireframe linier dan
+                                struktur navigasi. Fokus mengejar tata letak yang bersih sebelum masuk ke tahap
+                                penulisan kode.</p>
                         </div>
                     </div>
 
                     <div class="bg-white border border-zinc-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start gap-4 hover:border-zinc-400 transition duration-300"
-                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <span class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">02 / STAGE</span>
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <span
+                            class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">02
+                            / STAGE</span>
                         <div class="space-y-1">
                             <h4 class="text-sm font-bold text-black">Penulisan Kode Kustom & Integrasi Logic</h4>
-                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Eksekusi backend dan frontend murni berbasis kode kustom (*Clean Code*). Menghindari penggunaan framework/template gemuk demi mempertahankan kecepatan render maksimal.</p>
+                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Eksekusi backend dan frontend
+                                murni berbasis kode kustom (*Clean Code*). Menghindari penggunaan framework/template
+                                gemuk demi mempertahankan kecepatan render maksimal.</p>
                         </div>
                     </div>
 
                     <div class="bg-white border border-zinc-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start gap-4 hover:border-zinc-400 transition duration-300"
-                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                        <span class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">03 / STAGE</span>
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <span
+                            class="text-xs font-mono font-bold text-black bg-zinc-50 border border-zinc-200 px-2 py-1 rounded">03
+                            / STAGE</span>
                         <div class="space-y-1">
                             <h4 class="text-sm font-bold text-black">Audit Performa & Pengujian Penetrasi</h4>
-                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Pengujian ketat pada Core Web Vitals, optimasi query database, serta enkapsulasi enkripsi dasar untuk memastikan keamanan data sebelum diluncurkan.</p>
+                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Pengujian ketat pada Core Web
+                                Vitals, optimasi query database, serta enkapsulasi enkripsi dasar untuk memastikan
+                                keamanan data sebelum diluncurkan.</p>
                         </div>
                     </div>
 
                     <div class="bg-white border border-zinc-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start gap-4 hover:border-zinc-400 transition duration-300"
-                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                        <span class="text-xs font-mono font-bold text-white bg-black border border-black px-2 py-1 rounded">04 / DEPLOY</span>
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <span
+                            class="text-xs font-mono font-bold text-white bg-black border border-black px-2 py-1 rounded">04
+                            / DEPLOY</span>
                         <div class="space-y-1">
                             <h4 class="text-sm font-bold text-black">Deploimen Produksi & Aktivasi SLA</h4>
-                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Migrasi penuh sistem ke infrastruktur cloud server production (UNIX Environment). Website siap diakses publik dengan jaminan monitoring stabilitas penuh.</p>
+                            <p class="text-zinc-500 text-xs leading-relaxed font-medium">Migrasi penuh sistem ke
+                                infrastruktur cloud server production (UNIX Environment). Website siap diakses publik
+                                dengan jaminan monitoring stabilitas penuh.</p>
                         </div>
                     </div>
 
@@ -761,74 +792,80 @@
     </section>
 
     <!-- KODE POP-UP OVERLAY (PREMIUM MONOCHROME MINIMALIST) -->
-<section id="process" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
-
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+    <section id="process" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
                 <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Onboarding</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Prosedur Kolaborasi & Integrasi Proyek.</h2>
+                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Prosedur Kolaborasi & Integrasi
+                    Proyek.</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative">
+            <div
+                class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 overflow-x-hidden md:overflow-visible before:absolute before:left-6 before:top-2 before:bottom-2 before:w-[1px] before:bg-zinc-200 before:z-0 md:before:hidden">
 
                 <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-[1px] bg-zinc-200 -z-0"></div>
 
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <div class="relative z-10 flex flex-col items-start text-left group space-y-4">
-                        <div class="w-12 h-12 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
-                            01
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-black">Briefing & Penjajakan</h3>
-                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
-                                Pemetaan kebutuhan fungsional sistem, penentuan target performa, dan diskusi mengenai arsitektur awal yang ingin dibangun.
-                            </p>
-                        </div>
+                <div class="relative z-10 flex flex-col items-start text-left group space-y-4 pl-15 md:pl-0">
+                    <div data-aos="zoom-in" data-aos-md="fade-up" data-aos-duration="600"
+                        class="w-12 h-12 shrink-0 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300 absolute left-0 top-0 md:relative md:left-auto md:top-auto">
+                        01
+                    </div>
+                    <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-md-delay="50">
+                        <h3 class="text-sm font-bold text-black">Briefing & Penjajakan</h3>
+                        <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
+                            Pemetaan kebutuhan fungsional sistem, penentuan target performa, dan diskusi mengenai
+                            arsitektur awal yang ingin dibangun.
+                        </p>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="relative z-10 flex flex-col items-start text-left group space-y-4">
-                        <div class="w-12 h-12 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
-                            02
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-black">Penyusunan Kontrak</h3>
-                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
-                                Finalisasi kesepakatan cakupan kerja (*Scope of Work*), garis waktu deploimen, biaya pengembangan, dan hak akses penuh aset kode.
-                            </p>
-                        </div>
+                <div class="relative z-10 flex flex-col items-start text-left group space-y-4 pl-15 md:pl-0">
+                    <div data-aos="zoom-in" data-aos-md="fade-up" data-aos-duration="600" data-aos-delay="100"
+                        data-aos-md-delay="100"
+                        class="w-12 h-12 shrink-0 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300 absolute left-0 top-0 md:relative md:left-auto md:top-auto">
+                        02
+                    </div>
+                    <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-delay="150"
+                        data-aos-md-delay="150">
+                        <h3 class="text-sm font-bold text-black">Penyusunan Kontrak</h3>
+                        <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
+                            Finalisasi kesepakatan cakupan kerja (*Scope of Work*), garis waktu deploimen, biaya
+                            pengembangan, dan hak akses penuh aset kode.
+                        </p>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="relative z-10 flex flex-col items-start text-left group space-y-4">
-                        <div class="w-12 h-12 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
-                            03
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-black">Iterasi & Sinkronisasi</h3>
-                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
-                                Peninjauan berkala hasil penulisan kode melalui tautan *sandbox server*. Anda bisa memantau dan memberikan umpan balik secara langsung.
-                            </p>
-                        </div>
+                <div class="relative z-10 flex flex-col items-start text-left group space-y-4 pl-15 md:pl-0">
+                    <div data-aos="zoom-in" data-aos-md="fade-up" data-aos-duration="600" data-aos-delay="200"
+                        data-aos-md-delay="200"
+                        class="w-12 h-12 shrink-0 bg-zinc-50 text-black font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-zinc-200 group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300 absolute left-0 top-0 md:relative md:left-auto md:top-auto">
+                        03
+                    </div>
+                    <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-delay="250"
+                        data-aos-md-delay="250">
+                        <h3 class="text-sm font-bold text-black">Iterasi & Sinkronisasi</h3>
+                        <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
+                            Peninjauan berkala hasil penulisan kode melalui tautan *sandbox server*. Anda bisa memantau
+                            dan memberikan umpan balik secara langsung.
+                        </p>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="relative z-10 flex flex-col items-start text-left group space-y-4">
-                        <div class="w-12 h-12 bg-black text-white font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-black shadow-xs">
-                            04
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-black">Handover & Launch</h3>
-                            <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
-                                Pemindahan hak milik repositori git, konfigurasi domain produksi, dan penyerahan dokumentasi sistem pasca deploimen.
-                            </p>
-                        </div>
+                <div class="relative z-10 flex flex-col items-start text-left group space-y-4 pl-15 md:pl-0">
+                    <div data-aos="zoom-in" data-aos-md="fade-up" data-aos-duration="600" data-aos-delay="300"
+                        data-aos-md-delay="300"
+                        class="w-12 h-12 shrink-0 bg-black text-white font-mono font-bold text-sm rounded-xl flex items-center justify-center border border-black shadow-xs absolute left-0 top-0 md:relative md:left-auto md:top-auto">
+                        04
+                    </div>
+                    <div data-aos="fade-left" data-aos-md="fade-up" data-aos-duration="800" data-aos-delay="350"
+                        data-aos-md-delay="350">
+                        <h3 class="text-sm font-bold text-black">Handover & Launch</h3>
+                        <p class="text-zinc-500 text-xs mt-1.5 leading-relaxed font-medium">
+                            Pemindahan hak milik repositori git, konfigurasi domain produksi, dan penyerahan dokumentasi
+                            sistem pasca deploimen.
+                        </p>
                     </div>
                 </div>
 
@@ -836,27 +873,37 @@
         </div>
     </section>
 
-<section id="pricing" class="relative overflow-hidden bg-zinc-950 text-white py-24 border-b border-zinc-900">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+
+    <section id="pricing" class="relative overflow-hidden bg-zinc-950 text-white py-24 border-b border-zinc-900">
+
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase">Investment Matrix</span>
-                <h2 class="text-3xl font-black text-white tracking-tight leading-none">Skema Komparasi & Biaya Deploimen.</h2>
+                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase">Investment
+                    Matrix</span>
+                <h2 class="text-3xl font-black text-white tracking-tight leading-none">Skema Komparasi & Biaya
+                    Deploimen.</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-8 items-stretch">
 
                 <div data-aos="fade-up" data-aos-duration="800">
-                    <div class="bg-zinc-900/40 backdrop-blur-md border border-zinc-800 p-8 rounded-3xl flex flex-col justify-between hover:border-zinc-700 transition duration-300 h-full">
+                    <div
+                        class="bg-zinc-900/40 backdrop-blur-md border border-zinc-800 p-8 rounded-3xl flex flex-col justify-between hover:border-zinc-700 transition duration-300 h-full">
                         <div>
                             <div class="flex justify-between items-start">
-                                <h3 class="text-base font-bold tracking-tight font-mono text-white">01 // Core Interface</h3>
-                                <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">Single-Tier</span>
+                                <h3 class="text-base font-bold tracking-tight font-mono text-white">01 // Core Interface
+                                </h3>
+                                <span
+                                    class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">Single-Tier</span>
                             </div>
-                            <p class="text-zinc-400 text-xs mt-2 font-medium">Optimal untuk peluncuran produk tunggal, validasi pasar, atau halaman konversi linier.</p>
+                            <p class="text-zinc-400 text-xs mt-2 font-medium">Optimal untuk peluncuran produk tunggal,
+                                validasi pasar, atau halaman konversi linier.</p>
 
                             <div class="mt-6 border-b border-zinc-800 pb-6">
                                 <span class="text-xs font-mono text-zinc-500 block mb-1">Mulai dari</span>
@@ -865,35 +912,44 @@
 
                             <ul class="mt-6 space-y-3.5 text-xs text-zinc-400 font-medium">
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> 1 Dedicated Responsive Page Setup
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> 1 Dedicated Responsive Page
+                                    Setup
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Asynchronous Media Loading Integration
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Asynchronous Media Loading
+                                    Integration
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Custom Direct Gateway Integration
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Custom Direct Gateway
+                                    Integration
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Deployment to Target Production Node
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Deployment to Target
+                                    Production Node
                                 </li>
                             </ul>
                         </div>
 
-                        <a href="#contact" class="mt-10 bg-zinc-900 hover:bg-white text-zinc-300 hover:text-black font-bold py-3 text-xs rounded-xl text-center block transition duration-300 border border-zinc-800 hover:border-white font-mono">
+                        <a href="#contact"
+                            class="mt-10 bg-zinc-900 hover:bg-white text-zinc-300 hover:text-black font-bold py-3 text-xs rounded-xl text-center block transition duration-300 border border-zinc-800 hover:border-white font-mono">
                             Inisiasi Proyek →
                         </a>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-                    <div class="bg-zinc-900/40 backdrop-blur-md border border-zinc-800 p-8 rounded-3xl flex flex-col justify-between hover:border-zinc-600 transition duration-300 h-full relative overflow-hidden">
+                    <div
+                        class="bg-zinc-900/40 backdrop-blur-md border border-zinc-800 p-8 rounded-3xl flex flex-col justify-between hover:border-zinc-600 transition duration-300 h-full relative overflow-hidden">
 
                         <div>
                             <div class="flex justify-between items-start">
-                                <h3 class="text-base font-bold tracking-tight font-mono text-white">02 // Integrated System</h3>
-                                <span class="text-[10px] font-mono text-zinc-400 font-bold uppercase tracking-wider bg-white/10 px-2 py-0.5 rounded">Multi-Tier</span>
+                                <h3 class="text-base font-bold tracking-tight font-mono text-white">02 // Integrated
+                                    System</h3>
+                                <span
+                                    class="text-[10px] font-mono text-zinc-400 font-bold uppercase tracking-wider bg-white/10 px-2 py-0.5 rounded">Multi-Tier</span>
                             </div>
-                            <p class="text-zinc-400 text-xs mt-2 font-medium">Arsitektur multi-halaman terintegrasi, sangat cocok untuk korporasi atau manajemen database dinamis.</p>
+                            <p class="text-zinc-400 text-xs mt-2 font-medium">Arsitektur multi-halaman terintegrasi,
+                                sangat cocok untuk korporasi atau manajemen database dinamis.</p>
 
                             <div class="mt-6 border-b border-zinc-800 pb-6">
                                 <span class="text-xs font-mono text-zinc-500 block mb-1">Mulai dari</span>
@@ -902,24 +958,30 @@
 
                             <ul class="mt-6 space-y-3.5 text-xs text-zinc-400 font-medium">
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Bespoke Multi-Page Architecture
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Bespoke Multi-Page
+                                    Architecture
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Dynamic State Management & Core Logic
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Dynamic State Management &
+                                    Core Logic
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Relational Database Integration (MariaDB)
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Relational Database
+                                    Integration (MariaDB)
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Core SEO Mapping & Structured Data Audit
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> Core SEO Mapping & Structured
+                                    Data Audit
                                 </li>
                                 <li class="flex items-center gap-3">
-                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> 90-Day Post-Deployment Stability SLA
+                                    <i data-lucide="check" class="w-4 h-4 text-white"></i> 90-Day Post-Deployment
+                                    Stability SLA
                                 </li>
                             </ul>
                         </div>
 
-                        <a href="#contact" class="mt-10 bg-white hover:bg-zinc-200 text-black font-bold py-3 text-xs rounded-xl text-center block transition duration-300 border border-white font-mono">
+                        <a href="#contact"
+                            class="mt-10 bg-white hover:bg-zinc-200 text-black font-bold py-3 text-xs rounded-xl text-center block transition duration-300 border border-white font-mono">
                             Inisiasi Proyek →
                         </a>
                     </div>
@@ -930,75 +992,99 @@
     </section>
 
     <!-- 6.5 FAQ SECTION (PREMIUM MONOCHROME SMOOTH ACCORDION) -->
-<section id="faq" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
+    <section id="faq" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-4xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Information Control</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Dokumentasi Ketentuan & Regulasi Teknis.</h2>
+                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Information
+                    Control</span>
+                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Dokumentasi Ketentuan & Regulasi
+                    Teknis.</h2>
             </div>
 
             <div class="space-y-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 
-                <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
+                <div
+                    class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex justify-between items-center p-6 text-left font-bold text-black hover:text-zinc-700 transition duration-300 cursor-pointer group">
-                        <span class="text-sm md:text-base tracking-tight">Berapa lama siklus pengembangan sistem hingga siap rilis?</span>
+                        <span class="text-sm md:text-base tracking-tight">Berapa lama siklus pengembangan sistem hingga
+                            siap rilis?</span>
                         <span class="transform transition duration-300 text-zinc-400 group-hover:text-black">
                             <i data-lucide="plus" class="w-5 h-5 transition-transform duration-300"></i>
                         </span>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-zinc-50/50">
                         <p class="p-6 text-zinc-500 text-xs leading-relaxed font-medium border-t border-zinc-100">
-                            Estimasi pengerjaan untuk struktur **Core Interface** membutuhkan waktu sekitar **3-5 hari kerja**, sedangkan untuk arsitektur kompleks **Integrated System** berkisar antara **7-14 hari kerja**. Garis waktu ini dihitung secara presisi setelah parameter kebutuhan sistem dan aset dasar dari sisi Anda telah disinkronisasikan sepenuhnya.
+                            Estimasi pengerjaan untuk struktur **Core Interface** membutuhkan waktu sekitar **3-5 hari
+                            kerja**, sedangkan untuk arsitektur kompleks **Integrated System** berkisar antara **7-14
+                            hari kerja**. Garis waktu ini dihitung secara presisi setelah parameter kebutuhan sistem dan
+                            aset dasar dari sisi Anda telah disinkronisasikan sepenuhnya.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
+                <div
+                    class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex justify-between items-center p-6 text-left font-bold text-black hover:text-zinc-700 transition duration-300 cursor-pointer group">
-                        <span class="text-sm md:text-base tracking-tight">Bagaimana ketentuan deploimen infrastruktur server dan domain?</span>
+                        <span class="text-sm md:text-base tracking-tight">Bagaimana ketentuan deploimen infrastruktur
+                            server dan domain?</span>
                         <span class="transform transition duration-300 text-zinc-400 group-hover:text-black">
                             <i data-lucide="plus" class="w-5 h-5 transition-transform duration-300"></i>
                         </span>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-zinc-50/50">
                         <p class="p-6 text-zinc-500 text-xs leading-relaxed font-medium border-t border-zinc-100">
-                            Seluruh biaya pengembangan awal sudah mencakup alokasi lisensi nama domain utama (.com atau regulasi lokal) serta konfigurasi cloud hosting berbasis UNIX environment dengan latensi rendah selama 12 bulan pertama. Memasuki tahun berikutnya, Anda hanya bertanggung jawab atas biaya retensi perpanjangan aset server dan domain tersebut secara transparan.
+                            Seluruh biaya pengembangan awal sudah mencakup alokasi lisensi nama domain utama (.com atau
+                            regulasi lokal) serta konfigurasi cloud hosting berbasis UNIX environment dengan latensi
+                            rendah selama 12 bulan pertama. Memasuki tahun berikutnya, Anda hanya bertanggung jawab atas
+                            biaya retensi perpanjangan aset server dan domain tersebut secara transparan.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
+                <div
+                    class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex justify-between items-center p-6 text-left font-bold text-black hover:text-zinc-700 transition duration-300 cursor-pointer group">
-                        <span class="text-sm md:text-base tracking-tight">Bagaimana skema iterasi jika terdapat penyesuaian fungsional?</span>
+                        <span class="text-sm md:text-base tracking-tight">Bagaimana skema iterasi jika terdapat
+                            penyesuaian fungsional?</span>
                         <span class="transform transition duration-300 text-zinc-400 group-hover:text-black">
                             <i data-lucide="plus" class="w-5 h-5 transition-transform duration-300"></i>
                         </span>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-zinc-50/50">
                         <p class="p-6 text-zinc-500 text-xs leading-relaxed font-medium border-t border-zinc-100">
-                            Kami menerapkan sistem kontrol perubahan berbasis batas cakupan (*Scope limits*). Selama masa pengembangan di *sandbox environment*, Anda memiliki kuota evaluasi berkala untuk memastikan penyelarasan elemen visual dan logika sistem berjalan selaras dengan kesepakatan awal sebelum kode didorong ke server produksi.
+                            Kami menerapkan sistem kontrol perubahan berbasis batas cakupan (*Scope limits*). Selama
+                            masa pengembangan di *sandbox environment*, Anda memiliki kuota evaluasi berkala untuk
+                            memastikan penyelarasan elemen visual dan logika sistem berjalan selaras dengan kesepakatan
+                            awal sebelum kode didorong ke server produksi.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
+                <div
+                    class="bg-white rounded-3xl border border-zinc-200 overflow-hidden hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex justify-between items-center p-6 text-left font-bold text-black hover:text-zinc-700 transition duration-300 cursor-pointer group">
-                        <span class="text-sm md:text-base tracking-tight">Apakah ada jaminan penanganan jika sistem mengalami kendala?</span>
+                        <span class="text-sm md:text-base tracking-tight">Apakah ada jaminan penanganan jika sistem
+                            mengalami kendala?</span>
                         <span class="transform transition duration-300 text-zinc-400 group-hover:text-black">
                             <i data-lucide="plus" class="w-5 h-5 transition-transform duration-300"></i>
                         </span>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-zinc-50/50">
                         <p class="p-6 text-zinc-500 text-xs leading-relaxed font-medium border-t border-zinc-100">
-                            Ya. Setiap sistem yang dideploy dilindungi oleh kesepakatan tingkat layanan (*Service Level Agreement* / SLA) jaminan stabilitas. Jika ditemukan anomali berupa bug fungsional atau kegagalan konfigurasi sisi server pasca peluncuran, penanganan darurat akan dieksekusi secara prioritas tanpa ada penambahan biaya variabel apa pun.
+                            Ya. Setiap sistem yang dideploy dilindungi oleh kesepakatan tingkat layanan (*Service Level
+                            Agreement* / SLA) jaminan stabilitas. Jika ditemukan anomali berupa bug fungsional atau
+                            kegagalan konfigurasi sisi server pasca peluncuran, penanganan darurat akan dieksekusi
+                            secara prioritas tanpa ada penambahan biaya variabel apa pun.
                         </p>
                     </div>
                 </div>
@@ -1008,28 +1094,35 @@
     </section>
 
     <!--testi-->
-<section id="testimonials" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
+    <section id="testimonials" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
                 <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Evaluation</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Ulasan Performa & Catatan Mitra.</h2>
+                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Ulasan Performa & Catatan Mitra.
+                </h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <div data-aos="fade-up" data-aos-duration="800">
-                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
+                    <div
+                        class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
 
                         <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                            "Struktur penanganan state katalog di sisi klien berjalan sangat presisi. Kompresi asinkron yang diimplementasikan pada aset gambar beresolusi tinggi berhasil memangkas interaksi beban awal secara drastis."
+                            "Struktur penanganan state katalog di sisi klien berjalan sangat presisi. Kompresi asinkron
+                            yang diimplementasikan pada aset gambar beresolusi tinggi berhasil memangkas interaksi beban
+                            awal secara drastis."
                         </p>
 
                         <div class="mt-8 flex items-center gap-3 border-t border-zinc-100 pt-4">
-                            <div class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
+                            <div
+                                class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                                 RZ
                             </div>
                             <div>
@@ -1041,14 +1134,18 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
+                    <div
+                        class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
 
                         <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                            "Sistem otomatisasi antrean kuota Pre-Order bekerja tanpa celah. Logika pembatasan kapasitas berkala di backend berhasil mereduksi penumpukan data pemesanan secara signifikan tanpa membebani alokasi server."
+                            "Sistem otomatisasi antrean kuota Pre-Order bekerja tanpa celah. Logika pembatasan kapasitas
+                            berkala di backend berhasil mereduksi penumpukan data pemesanan secara signifikan tanpa
+                            membebani alokasi server."
                         </p>
 
                         <div class="mt-8 flex items-center gap-3 border-t border-zinc-100 pt-4">
-                            <div class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
+                            <div
+                                class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                                 ST
                             </div>
                             <div>
@@ -1060,14 +1157,17 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
+                    <div
+                        class="bg-white p-6 md:p-8 rounded-3xl border border-zinc-200 hover:border-zinc-400 hover:shadow-xl hover:shadow-zinc-100/50 transition duration-300 flex flex-col justify-between h-full group">
 
                         <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                            "Modul sinkronisasi jadwal waktu nyata terintegrasi dengan sangat kokoh. Penjadwalan sesi foto otomatis berhasil mengeliminasi potensi konflik alokasi jam operasional secara penuh."
+                            "Modul sinkronisasi jadwal waktu nyata terintegrasi dengan sangat kokoh. Penjadwalan sesi
+                            foto otomatis berhasil mengeliminasi potensi konflik alokasi jam operasional secara penuh."
                         </p>
 
                         <div class="mt-8 flex items-center gap-3 border-t border-zinc-100 pt-4">
-                            <div class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
+                            <div
+                                class="w-8 h-8 bg-zinc-50 border border-zinc-200 text-black font-mono font-bold rounded-lg flex items-center justify-center text-xs group-hover:bg-black group-hover:border-black group-hover:text-white transition duration-300">
                                 KV
                             </div>
                             <div>
@@ -1082,54 +1182,66 @@
         </div>
     </section>
 
-<section id="contact" class="relative overflow-hidden bg-zinc-950 text-white py-24 border-t border-zinc-900">
+    <section id="contact" class="relative overflow-hidden bg-zinc-950 text-white py-24 border-t border-zinc-900">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                 <div class="lg:col-span-7 space-y-4" data-aos="fade-up" data-aos-duration="800">
-                    <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase block">Project Initiation</span>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-500 uppercase block">Project
+                        Initiation</span>
                     <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight leading-none">
                         Buka Alokasi Pengerjaan & Sinkronisasi Sistem.
                     </h2>
                     <p class="text-zinc-400 text-xs md:text-sm leading-relaxed font-medium max-w-xl">
-                        Diskusikan parameter arsitektur, kebutuhan database, dan target waktu deploimen untuk proyek Anda. Kami membatasi kuota pengembangan simultan demi menjaga integritas dan performa optimasi baris kode secara maksimal.
+                        Diskusikan parameter arsitektur, kebutuhan database, dan target waktu deploimen untuk proyek
+                        Anda. Kami membatasi kuota pengembangan simultan demi menjaga integritas dan performa optimasi
+                        baris kode secara maksimal.
                     </p>
                 </div>
 
-                <div class="lg:col-span-5 flex flex-col gap-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                <div class="lg:col-span-5 flex flex-col gap-4" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="150">
 
                     <a href="https://wa.me/628123456789" target="_blank"
-                       class="flex items-center justify-between p-5 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-zinc-500 hover:bg-zinc-900/80 transition duration-300 group">
+                        class="flex items-center justify-between p-5 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-zinc-500 hover:bg-zinc-900/80 transition duration-300 group">
                         <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-xl flex items-center justify-center group-hover:text-white transition duration-300">
+                            <div
+                                class="w-10 h-10 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-xl flex items-center justify-center group-hover:text-white transition duration-300">
                                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                                 </svg>
                             </div>
                             <div class="text-left">
                                 <h4 class="text-xs font-bold font-mono text-white">Secure Gateway Connection</h4>
-                                <p class="text-[10px] text-zinc-500 font-medium mt-0.5">Respons instan via enkripsi chat WhatsApp.</p>
+                                <p class="text-[10px] text-zinc-500 font-medium mt-0.5">Respons instan via enkripsi chat
+                                    WhatsApp.</p>
                             </div>
                         </div>
-                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-zinc-500 group-hover:text-white transition duration-300"></i>
+                        <i data-lucide="arrow-up-right"
+                            class="w-4 h-4 text-zinc-500 group-hover:text-white transition duration-300"></i>
                     </a>
 
                     <a href="mailto:emailanda@domain.com"
-                       class="flex items-center justify-between p-5 bg-white border border-white rounded-2xl hover:bg-zinc-100 transition duration-300 group">
+                        class="flex items-center justify-between p-5 bg-white border border-white rounded-2xl hover:bg-zinc-100 transition duration-300 group">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-zinc-950 text-white rounded-xl flex items-center justify-center">
                                 <i data-lucide="mail" class="w-4 h-4"></i>
                             </div>
                             <div class="text-left">
                                 <h4 class="text-xs font-bold font-mono text-black">Formal Project Briefing</h4>
-                                <p class="text-[10px] text-zinc-500 font-medium mt-0.5">Kirimkan rincian SOW & parameter dokumen via Email.</p>
+                                <p class="text-[10px] text-zinc-500 font-medium mt-0.5">Kirimkan rincian SOW & parameter
+                                    dokumen via Email.</p>
                             </div>
                         </div>
-                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-zinc-400 group-hover:text-black transition duration-300"></i>
+                        <i data-lucide="arrow-up-right"
+                            class="w-4 h-4 text-zinc-400 group-hover:text-black transition duration-300"></i>
                     </a>
 
                 </div>
@@ -1139,15 +1251,19 @@
     </section>
 
     <!-- 6. LATEST ARTICLES SECTION (PREMIUM MONOCHROME BLOG) -->
-<section id="blog" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
+    <section id="blog" class="relative overflow-hidden bg-white py-24 border-b border-zinc-100">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
 
             <div class="max-w-xl mb-16 space-y-3" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Engineering Logs</span>
-                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Dokumentasi, Riset & Catatan Teknis.</h2>
+                <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-400 uppercase">Engineering
+                    Logs</span>
+                <h2 class="text-3xl font-black text-black tracking-tight leading-none">Dokumentasi, Riset & Catatan
+                    Teknis.</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1156,21 +1272,27 @@
                     <article class="group flex flex-col h-full space-y-4">
                         <div class="aspect-video w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-200">
                             <img src="img/artikel/linus.webp" alt="Linus Torvalds"
-                                 class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
+                                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
                         </div>
                         <div class="flex flex-col flex-grow justify-between space-y-3">
                             <div class="space-y-2">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[ Core // Person ]</span>
-                                <h3 class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
-                                    <a href="artikel-linus.html">Mengenal Linus Torvalds, Sang Kreator Di Balik Arsitektur Kernel Linux</a>
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[
+                                    Core // Person ]</span>
+                                <h3
+                                    class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
+                                    <a href="artikel-linus.html">Mengenal Linus Torvalds, Sang Kreator Di Balik
+                                        Arsitektur Kernel Linux</a>
                                 </h3>
                                 <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                                    Dinamika bagaimana proyek eksperimental seorang mahasiswa berkembang menjadi fondasi komputasi global modern berbasis open-source.
+                                    Dinamika bagaimana proyek eksperimental seorang mahasiswa berkembang menjadi fondasi
+                                    komputasi global modern berbasis open-source.
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
+                            <div
+                                class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
                                 <span>READ_LOG //</span>
-                                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
                             </div>
                         </div>
                     </article>
@@ -1180,21 +1302,27 @@
                     <article class="group flex flex-col h-full space-y-4">
                         <div class="aspect-video w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-200">
                             <img src="img/artikel/serverlinux.webp" alt="Linux Server"
-                                 class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
+                                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
                         </div>
                         <div class="flex flex-col flex-grow justify-between space-y-3">
                             <div class="space-y-2">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[ Infra // Security ]</span>
-                                <h3 class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
-                                    <a href="artikel-linux-server.html">Anatomi Keamanan: Mengapa Lingkungan UNIX Menjadi Jantung Server Dunia?</a>
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[
+                                    Infra // Security ]</span>
+                                <h3
+                                    class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
+                                    <a href="artikel-linux-server.html">Anatomi Keamanan: Mengapa Lingkungan UNIX
+                                        Menjadi Jantung Server Dunia?</a>
                                 </h3>
                                 <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                                    Bedah teknis manajemen hak akses filesystem, stabilitas proses isolasi kernel, dan efisiensi resource penanganan beban trafik tinggi.
+                                    Bedah teknis manajemen hak akses filesystem, stabilitas proses isolasi kernel, dan
+                                    efisiensi resource penanganan beban trafik tinggi.
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
+                            <div
+                                class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
                                 <span>READ_LOG //</span>
-                                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
                             </div>
                         </div>
                     </article>
@@ -1204,21 +1332,27 @@
                     <article class="group flex flex-col h-full space-y-4">
                         <div class="aspect-video w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-200">
                             <img src="img/artikel/computer.webp" alt="Computer Evolution"
-                                 class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
+                                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition duration-500 ease-in-out">
                         </div>
                         <div class="flex flex-col flex-grow justify-between space-y-3">
                             <div class="space-y-2">
-                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[ System // History ]</span>
-                                <h3 class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
-                                    <a href="artikel-sejarah-komputer.html">Evolusi Komputasi: Transisi Mesin Kalkulasi Fisik Menuju Abstraksi Cloud</a>
+                                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400">[
+                                    System // History ]</span>
+                                <h3
+                                    class="text-sm font-bold text-black leading-snug group-hover:underline group-hover:decoration-zinc-400 group-hover:underline-offset-4 transition duration-300">
+                                    <a href="artikel-sejarah-komputer.html">Evolusi Komputasi: Transisi Mesin Kalkulasi
+                                        Fisik Menuju Abstraksi Cloud</a>
                                 </h3>
                                 <p class="text-zinc-500 text-xs leading-relaxed font-medium">
-                                    Kilas balik arsitektur pemrosesan data historis hingga bagaimana abstraksi virtualisasi server membentuk ekosistem web modern saat ini.
+                                    Kilas balik arsitektur pemrosesan data historis hingga bagaimana abstraksi
+                                    virtualisasi server membentuk ekosistem web modern saat ini.
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
+                            <div
+                                class="pt-3 border-t border-zinc-100 flex items-center justify-between text-[11px] font-mono font-bold text-black">
                                 <span>READ_LOG //</span>
-                                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition duration-300"></i>
                             </div>
                         </div>
                     </article>
@@ -1229,9 +1363,11 @@
     </section>
 
     <!-- FOOTER (PREMIUM MONOCHROME SOLID BLACK) -->
-<footer class="relative overflow-hidden bg-zinc-950 text-zinc-500 text-xs py-16 border-t border-zinc-900">
+    <footer class="relative overflow-hidden bg-zinc-950 text-zinc-500 text-xs py-16 border-t border-zinc-900">
 
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none"></div>
+        <div
+            class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
@@ -1241,11 +1377,13 @@
                         CoDEVIL
                     </div>
                     <p class="text-[11px] text-zinc-500 leading-relaxed max-w-sm font-medium">
-                        Bespoke web architecture, internal interface engineering, and system optimization. Dimanufaktur murni dari baris kode tanpa ketergantungan pada template instan.
+                        Bespoke web architecture, internal interface engineering, and system optimization. Dimanufaktur
+                        murni dari baris kode tanpa ketergantungan pada template instan.
                     </p>
                     <div class="flex items-center gap-2 pt-2">
                         <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                         </span>
                         <span class="text-[10px] font-mono text-zinc-400">NODE_STATUS // PRODUCTION_ACTIVE</span>
@@ -1256,7 +1394,8 @@
 
                 <div class="md:col-span-4 grid grid-cols-2 gap-4">
                     <div class="space-y-2.5">
-                        <span class="text-[10px] font-mono font-bold tracking-wider text-zinc-400 uppercase">// Map</span>
+                        <span class="text-[10px] font-mono font-bold tracking-wider text-zinc-400 uppercase">//
+                            Map</span>
                         <ul class="space-y-1.5 font-medium text-zinc-500">
                             <li><a href="#services" class="hover:text-white transition duration-300">Services</a></li>
                             <li><a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a></li>
@@ -1264,7 +1403,8 @@
                         </ul>
                     </div>
                     <div class="space-y-2.5">
-                        <span class="text-[10px] font-mono font-bold tracking-wider text-zinc-400 uppercase">// Matrix</span>
+                        <span class="text-[10px] font-mono font-bold tracking-wider text-zinc-400 uppercase">//
+                            Matrix</span>
                         <ul class="space-y-1.5 font-medium text-zinc-500">
                             <li><a href="#pricing" class="hover:text-white transition duration-300">Pricing</a></li>
                             <li><a href="#faq" class="hover:text-white transition duration-300">Documentation</a></li>
@@ -1275,7 +1415,8 @@
 
             </div>
 
-            <div class="mt-16 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[11px] font-mono">
+            <div
+                class="mt-16 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[11px] font-mono">
                 <p class="text-zinc-500">
                     &copy; 2026 <span class="text-white font-bold">CoDEVIL</span>. All engineering logs reserved.
                 </p>
