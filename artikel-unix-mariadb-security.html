@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenapa Linux Jantung Server Dunia? - Server & Security - CoDEVIL</title>
+    <title>Mengamankan Data Klien: Mengapa Kami Memilih UNIX & MariaDB - CoDEVIL</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animation on Scroll (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -14,6 +17,7 @@
 
 <body class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
 
+    <!-- NAVIGATION BAR -->
     <div class="sticky top-0 z-50 bg-zinc-50/10 backdrop-blur-md pt-3 pb-3" data-aos="fade-down"
         data-aos-duration="800">
         <nav
@@ -44,6 +48,7 @@
         </nav>
     </div>
 
+    <!-- HEADER SECTION -->
     <header class="relative py-20 border-b border-zinc-100 bg-zinc-50/30">
         <div
             class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808004_1px,transparent_1px),linear-gradient(to_bottom,#80808004_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
@@ -56,19 +61,20 @@
             </div>
             <h1 class="text-3xl md:text-5xl font-black tracking-tight text-black leading-none max-w-4xl mb-6"
                 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                Anatomi Keamanan: Mengapa Lingkungan UNIX Menjadi Jantung Server Dunia?
+                Mengamankan Data Klien: Mengapa Kami Memilih UNIX Environment & MariaDB untuk Infrastruktur Web.
             </h1>
             <div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-[11px] font-mono font-bold text-zinc-400"
                 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <span class="text-black">SYS_ENG: hazee</span>
                 <span>•</span>
-                <span>RELEASED: 21 Mei 2026</span>
+                <span>RELEASED: 30 Mei 2026</span>
                 <span>•</span>
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 MIN_READ</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 MIN_READ</span>
             </div>
         </div>
     </header>
 
+    <!-- MAIN ARTICLE BODY -->
     <main class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
@@ -77,70 +83,89 @@
                     class="w-full h-full object-cover object-left opacity-[0.3] filter grayscale">
             </div>
 
+            <!-- KONTEN KIRI (8 KOLOM) -->
             <div class="lg:col-span-8 space-y-6 text-zinc-600 text-xs md:text-sm leading-relaxed font-medium">
 
                 <div class="aspect-video w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-200 mb-10"
                     data-aos="fade-up" data-aos-duration="800">
-                    <img src="img/artikel/serverlinux.webp" alt="Linux Server Architecture"
+                    <img src="img/artikel/sql.webp" alt="UNIX Environment Security"
                         class="w-full h-full object-cover filter grayscale contrast-115 hover:grayscale-0 transition duration-500 ease-in-out">
                 </div>
 
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Dalam ekosistem komputasi awan dan manajemen infrastruktur berskala enterprise, penentuan sistem
-                    operasi bertindak sebagai keputusan arsitektural yang krusial. Distribusi berbasis kernel **Linux**
-                    memegang dominasi absolut sebagai platform penanganan *traffic* global, mengungguli alternatif
-                    proprietary dalam pemrosesan data kritis berdensitas tinggi.
+                    Di era digital saat ini, kebocoran privasi data bukan lagi sekadar risiko teknis, melainkan ancaman
+                    nyata yang bisa menghancurkan reputasi bisnis dalam semalam. Ketika banyak pengembang web bersikap
+                    abai dan menyerahkan keamanan pada konfigurasi *default* server murah, kami di CoDEVIL memilih jalur
+                    yang berbeda. Kami memperlakukan data bisnis Anda seperti komoditas paling berharga dengan membangun
+                    pagar pengaman langsung di atas layer kernel infrastruktur.
                 </p>
 
                 <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
                     data-aos-duration="800">
-                    01 // Arsitektur Hak Akses & Isolasi Proses Terbuka
+                    01 // Lingkungan UNIX: Filosofi Isolasi Total Hak Akses Server
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Kekuatan proteksi internal Linux berakar pada model penanganan hak akses subsistem UNIX yang sangat
-                    ketat (POSIX permissions). Melalui arsitektur open-source, integritas baris kode penyusun kernel
-                    terus mengalami proses audit berkala secara simultan oleh komunitas keamanan global. Mekanisme ini
-                    memastikan vulnerabilitas atau celah eksploitasi dapat diisolasi dan dieliminasi pada layer
-                    fundamental sebelum berdampak pada application layer.
+                    Alasan mendasar mengapa kami mengandalkan lingkungan bersertifikasi UNIX/Linux untuk seluruh
+                    arsitektur server produksi adalah sistem manajemen izinnya (*permission management*) yang sangat
+                    ketat dan rigid. Tidak ada satu pun proses aplikasi web yang diizinkan berjalan di bawah akses <span
+                        class="font-mono text-zinc-800 bg-zinc-100 px-1 py-0.5 rounded border border-zinc-200 text-xs">root</span>.
+                    Dengan menerapkan isolasi pengguna secara granular, jika terjadi anomali serangan pada satu
+                    subsistem, kernel UNIX akan langsung mengunci dan mencegah infiltrasi tersebut menyebar ke direktori
+                    data utama.
                 </p>
 
                 <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
                     data-aos-duration="800">
-                    02 // Stabilitas Alokasi Resource & Manajemen Uptime Moduler
+                    02 // MariaDB Enterprise: Menangkal Injeksi Data dengan Sistem Relasional Rigid
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Server Linux dikonfigurasi untuk mengeksekusi manajemen subsistem memori (RAM) dan alokasi
-                    pemrosesan instruksi CPU tanpa dependensi terhadap antarmuka grafis (headless environment).
-                    Abstraksi performa tinggi ini mereduksi alokasi overhead resource server secara signifikan,
-                    memungkinkan interaksi runtime sistem beroperasi selama bertahun-tahun secara asinkron tanpa
-                    memerlukan siklus *reboot* berkala.
+                    Untuk urusan penyimpanan data sensitif pengguna (mulai dari data transaksi katering hingga log
+                    transaksi e-commerce), kami menolak menggunakan database NoSQL yang longgar atau database instan
+                    tanpa enkripsi. Kami memilih <span class="font-bold text-black">MariaDB Enterprise</span>. Lewat
+                    optimasi *prepared statements* yang rigid, setiap paket data yang masuk disaring ketat di pintu luar
+                    sirkuit queri, memutus total celah serangan klasik seperti *SQL Injection* yang kerap menghantui
+                    website-website berbasis template murahan.
                 </p>
 
                 <blockquote
                     class="border-l-2 border-black bg-zinc-50 p-6 my-6 italic text-zinc-700 font-medium font-mono text-xs"
                     data-aos="fade-up" data-aos-duration="800">
-                    "Dalam implementasi cluster web produksi, manajemen konkurensi alokasi memori adalah parameter
-                    mutlak. Linux mengeliminasi kebocoran instruksi runtime di tingkat kernel."
+                    "Keamanan siber sejati tidak didapatkan dengan memasang plugin enkripsi di lapisan aplikasi visual,
+                    melainkan dengan menegakkan sterilisasi hak akses pada layer memori dan database terendah."
                     <span
                         class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-2 font-mono not-italic">—
-                        Core Architecture Review</span>
+                        Infrastructure & Cryptography Journal</span>
                 </blockquote>
+
+                <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
+                    data-aos-duration="800">
+                    03 // Kommitmen Privasi Lapisan Nol Ala CoDEVIL
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Kami percaya bahwa privasi adalah hak fundamental yang tidak bisa dikompromikan demi kemudahan
+                    instan. Setiap baris arsitektur backend yang kami pahat dilengkapi dengan sistem otentikasi berlapis
+                    serta komunikasi terenkripsi penuh (SSL/TLS kustom). Dengan meminimalkan dependensi pada skrip
+                    pelacak pihak ketiga yang gemuk, kami tidak hanya mengamankan integritas data klien Anda dari
+                    end-to-end, tetapi sekaligus melahirkan website berkecepatan tinggi yang steril dari intaian
+                    *data-mining*.
+                </p>
 
                 <div class="p-6 bg-zinc-50 border border-zinc-200 rounded-2xl mt-12 space-y-2" data-aos="fade-up"
                     data-aos-duration="800">
                     <h4 class="text-xs font-bold font-mono text-black uppercase tracking-wider flex items-center gap-2">
-                        <i data-lucide="terminal" class="w-4 h-4"></i> Infrastructure_Deployment_Note //
+                        <i data-lucide="terminal" class="w-4 h-4"></i> Security_Hardening_Note //
                     </h4>
                     <p class="text-[11px] text-zinc-500 leading-relaxed font-medium">
-                        Karakteristik stabilitas lingkungan UNIX melandasi standardisasi penyiapan deploimen server kami
-                        di CoDEVIL. Kami mengintegrasikan konfigurasi container tersinkronisasi di atas arsitektur
-                        server Debian Enterprise untuk memastikan proteksi akses filesystem yang ketat, isolasi request
-                        data hulu-hilir, dan minimalisasi latensi jaringan pada setiap produk digital yang kami rilis.
+                        Implementasi arsitektur bare-metal berbasis UNIX ini merupakan komitmen jangka panjang kami di
+                        CoDEVIL. Kami mengonfigurasi tangki penyimpanan data MariaDB dengan enkripsi data-at-rest dan
+                        rutin menegakkan audit log sistem berkala, memastikan platform digital perusahaan Anda berdiri
+                        kokoh di atas fondasi pertahanan siber yang paling andal dan tidak tertembus.
                     </p>
                 </div>
 
             </div>
 
+            <!-- KANAN / ASIDE SIDEBAR (4 KOLOM) -->
             <aside class="lg:col-span-4 space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
                 <div class="border border-zinc-200 p-5 rounded-2xl space-y-3">
@@ -180,15 +205,6 @@
                                 Mengapa "Template Instan" Bikin Bisnis Anda Boncos di Google Search
                             </h4>
                         </a>
-                        <a href="artikel-sejarah-komputer.html"
-                            class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
-                            <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ System //
-                                History ]</span>
-                            <h4
-                                class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
-                                Evolusi Komputasi: Transisi Mesin Kalkulasi Fisik Menuju Abstraksi Cloud
-                            </h4>
-                        </a>
                         <a href="artikel-unix-mariadb-security.html"
                             class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
                             <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ Infra //
@@ -197,6 +213,15 @@
                                 class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
                                 Mengamankan Data Klien: Mengapa Kami Memilih UNIX Environment & MariaDB untuk
                                 Infrastruktur Web
+                            </h4>
+                        </a>
+                        <a href="artikel-sejarah-komputer.html"
+                            class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
+                            <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ System //
+                                History ]</span>
+                            <h4
+                                class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
+                                Evolusi Komputasi: Transisi Mesin Kalkulasi Fisik Menuju Abstraksi Cloud
                             </h4>
                         </a>
                         <a href="artikel-linux-server.html"
@@ -231,6 +256,7 @@
         </div>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer class="relative overflow-hidden bg-zinc-950 text-zinc-500 text-xs py-16 border-t border-zinc-900">
         <div
             class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">

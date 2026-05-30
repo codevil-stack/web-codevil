@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenapa Linux Jantung Server Dunia? - Server & Security - CoDEVIL</title>
+    <title>Arsitektur Web Apps vs Landing Page Biasa - CoDEVIL</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animation on Scroll (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -14,6 +17,7 @@
 
 <body class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
 
+    <!-- NAVIGATION BAR -->
     <div class="sticky top-0 z-50 bg-zinc-50/10 backdrop-blur-md pt-3 pb-3" data-aos="fade-down"
         data-aos-duration="800">
         <nav
@@ -44,6 +48,7 @@
         </nav>
     </div>
 
+    <!-- HEADER SECTION -->
     <header class="relative py-20 border-b border-zinc-100 bg-zinc-50/30">
         <div
             class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#80808004_1px,transparent_1px),linear-gradient(to_bottom,#80808004_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
@@ -52,23 +57,24 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-zinc-100 border border-zinc-200 text-zinc-500 rounded font-mono text-[10px] font-bold uppercase tracking-wider mb-6"
                 data-aos="fade-up" data-aos-duration="700">
-                [ Infra // Security ]
+                [ Enterprise // Architecture ]
             </div>
             <h1 class="text-3xl md:text-5xl font-black tracking-tight text-black leading-none max-w-4xl mb-6"
                 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                Anatomi Keamanan: Mengapa Lingkungan UNIX Menjadi Jantung Server Dunia?
+                Arsitektur Web Apps vs Landing Page Biasa: Mana yang Dibutuhkan Bisnis Anda?
             </h1>
             <div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-[11px] font-mono font-bold text-zinc-400"
                 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <span class="text-black">SYS_ENG: hazee</span>
                 <span>•</span>
-                <span>RELEASED: 21 Mei 2026</span>
+                <span>RELEASED: 30 Mei 2026</span>
                 <span>•</span>
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 MIN_READ</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 MIN_READ</span>
             </div>
         </div>
     </header>
 
+    <!-- MAIN ARTICLE BODY -->
     <main class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
@@ -77,70 +83,89 @@
                     class="w-full h-full object-cover object-left opacity-[0.3] filter grayscale">
             </div>
 
+            <!-- KONTEN KIRI (8 KOLOM) -->
             <div class="lg:col-span-8 space-y-6 text-zinc-600 text-xs md:text-sm leading-relaxed font-medium">
 
                 <div class="aspect-video w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-200 mb-10"
                     data-aos="fade-up" data-aos-duration="800">
-                    <img src="img/artikel/serverlinux.webp" alt="Linux Server Architecture"
+                    <img src="img/artikel/webappvslandingpage.webp" alt="Enterprise Web Architecture"
                         class="w-full h-full object-cover filter grayscale contrast-115 hover:grayscale-0 transition duration-500 ease-in-out">
                 </div>
 
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Dalam ekosistem komputasi awan dan manajemen infrastruktur berskala enterprise, penentuan sistem
-                    operasi bertindak sebagai keputusan arsitektural yang krusial. Distribusi berbasis kernel **Linux**
-                    memegang dominasi absolut sebagai platform penanganan *traffic* global, mengungguli alternatif
-                    proprietary dalam pemrosesan data kritis berdensitas tinggi.
+                    Sering kali kami menemui pelaku bisnis skala menengah atau korporasi yang bingung menentukan jenis
+                    infrastruktur digital mereka. Kesalahan fatal yang paling sering terjadi adalah memaksakan sebuah
+                    *landing page* brosur statis biasa untuk menangani alur kerja operasional perusahaan yang kompleks,
+                    atau sebaliknya. Memahami perbedaan fundamental sirkuit logika kedua sistem ini adalah kunci
+                    efisiensi investasi teknologi Anda.
                 </p>
 
                 <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
                     data-aos-duration="800">
-                    01 // Arsitektur Hak Akses & Isolasi Proses Terbuka
+                    01 // Landing Page: Node Informasi Satu Arah untuk Konversi Kilat
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Kekuatan proteksi internal Linux berakar pada model penanganan hak akses subsistem UNIX yang sangat
-                    ketat (POSIX permissions). Melalui arsitektur open-source, integritas baris kode penyusun kernel
-                    terus mengalami proses audit berkala secara simultan oleh komunitas keamanan global. Mekanisme ini
-                    memastikan vulnerabilitas atau celah eksploitasi dapat diisolasi dan dieliminasi pada layer
-                    fundamental sebelum berdampak pada application layer.
+                    Sebuah *landing page* dirancang dengan satu misi mutlak: konversi jangka pendek. Secara teknis, ini
+                    adalah halaman statis searah yang meminimalkan interaksi database berat. Fokus utamanya ada pada
+                    kecepatan muat layer pertama dan alur informasi linier untuk menggiring audiens menuju tombol aksi
+                    (CTA). Infrastruktur ini ideal jika Anda hanya ingin meluncurkan validasi produk baru, profil
+                    perusahaan, atau halaman kampanye iklan spesifik yang tidak membutuhkan retensi data pengguna.
                 </p>
 
                 <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
                     data-aos-duration="800">
-                    02 // Stabilitas Alokasi Resource & Manajemen Uptime Moduler
+                    02 // Web Applications: Mesin Komputasi Dinamis Berbasis State Manajemen
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="800">
-                    Server Linux dikonfigurasi untuk mengeksekusi manajemen subsistem memori (RAM) dan alokasi
-                    pemrosesan instruksi CPU tanpa dependensi terhadap antarmuka grafis (headless environment).
-                    Abstraksi performa tinggi ini mereduksi alokasi overhead resource server secara signifikan,
-                    memungkinkan interaksi runtime sistem beroperasi selama bertahun-tahun secara asinkron tanpa
-                    memerlukan siklus *reboot* berkala.
+                    Ketika bisnis Anda mulai membutuhkan manajemen hak akses (autentikasi multi-level), sistem manajemen
+                    logistik (seperti pelacakan inventaris armada), pemrosesan transaksi *live*, hingga automasi
+                    kalkulasi internal, maka Anda sudah berada di ranah <span class="font-bold text-black">Web
+                        Applications (Aplikasi Web)</span>. Sistem ini memproses manipulasi data secara dinamis
+                    menggunakan manajemen <span
+                        class="font-mono text-zinc-800 bg-zinc-100 px-1 py-0.5 rounded border border-zinc-200 text-xs">State
+                        (State-Driven UI)</span>. Komunikasi dua arah antara *client-side browser* dan mesin database
+                    relasional diatur ketat untuk mengolah ekosistem bisnis Anda secara *real-time*.
                 </p>
 
                 <blockquote
                     class="border-l-2 border-black bg-zinc-50 p-6 my-6 italic text-zinc-700 font-medium font-mono text-xs"
                     data-aos="fade-up" data-aos-duration="800">
-                    "Dalam implementasi cluster web produksi, manajemen konkurensi alokasi memori adalah parameter
-                    mutlak. Linux mengeliminasi kebocoran instruksi runtime di tingkat kernel."
+                    "Landing page adalah etalase kaca depan toko Anda. Sedangkan Web Application adalah sistem manajemen
+                    pergudangan, mesin kasir otomatis, dan logistik suplai yang berjalan di balik dinding toko."
                     <span
                         class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400 mt-2 font-mono not-italic">—
-                        Core Architecture Review</span>
+                        Digital Systems Architecture Guide</span>
                 </blockquote>
+
+                <h2 class="text-lg font-bold text-black tracking-tight font-mono pt-6" data-aos="fade-up"
+                    data-aos-duration="800">
+                    03 // Menentukan Pilihan: Skalabilitas Infrastruktur Masa Depan
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Salah memilih fondasi di awal akan berakibat pada pembengkakan biaya rekayasa ulang di kemudian hari
+                    (*tech debt*). Jika target bisnis Anda melibatkan automasi sistem internal atau retensi pengguna
+                    aktif (SaaS), jangan ragu untuk berinvestasi pada arsitektur aplikasi web sejak awal. Membangun
+                    sistem yang modular kustom memastikan fungsionalitas web dapat terus dikembangkan secara dinamis
+                    mengikuti skala ekspansi volume data korporasi Anda tanpa perlu merombak sistem dari nol lagi.
+                </p>
 
                 <div class="p-6 bg-zinc-50 border border-zinc-200 rounded-2xl mt-12 space-y-2" data-aos="fade-up"
                     data-aos-duration="800">
                     <h4 class="text-xs font-bold font-mono text-black uppercase tracking-wider flex items-center gap-2">
-                        <i data-lucide="terminal" class="w-4 h-4"></i> Infrastructure_Deployment_Note //
+                        <i data-lucide="terminal" class="w-4 h-4"></i> Corporate_Architecture_Note //
                     </h4>
                     <p class="text-[11px] text-zinc-500 leading-relaxed font-medium">
-                        Karakteristik stabilitas lingkungan UNIX melandasi standardisasi penyiapan deploimen server kami
-                        di CoDEVIL. Kami mengintegrasikan konfigurasi container tersinkronisasi di atas arsitektur
-                        server Debian Enterprise untuk memastikan proteksi akses filesystem yang ketat, isolasi request
-                        data hulu-hilir, dan minimalisasi latensi jaringan pada setiap produk digital yang kami rilis.
+                        Di CoDEVIL, kami menganalisis matang-matang kebutuhan logika bisnis Anda sebelum menyusun draf
+                        cetak biru sistem. Baik itu landing page dengan performa rendering super tangkas ataupun
+                        aplikasi web berskala enterprise, seluruh baris instruksi kami bangun secara kustom di atas
+                        lingkungan server UNIX yang steril demi menjamin keamanan dan skalabilitas jangka panjang bisnis
+                        Anda.
                     </p>
                 </div>
 
             </div>
 
+            <!-- KANAN / ASIDE SIDEBAR (4 KOLOM) -->
             <aside class="lg:col-span-4 space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
                 <div class="border border-zinc-200 p-5 rounded-2xl space-y-3">
@@ -180,15 +205,6 @@
                                 Mengapa "Template Instan" Bikin Bisnis Anda Boncos di Google Search
                             </h4>
                         </a>
-                        <a href="artikel-sejarah-komputer.html"
-                            class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
-                            <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ System //
-                                History ]</span>
-                            <h4
-                                class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
-                                Evolusi Komputasi: Transisi Mesin Kalkulasi Fisik Menuju Abstraksi Cloud
-                            </h4>
-                        </a>
                         <a href="artikel-unix-mariadb-security.html"
                             class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
                             <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ Infra //
@@ -197,6 +213,15 @@
                                 class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
                                 Mengamankan Data Klien: Mengapa Kami Memilih UNIX Environment & MariaDB untuk
                                 Infrastruktur Web
+                            </h4>
+                        </a>
+                        <a href="artikel-sejarah-komputer.html"
+                            class="block p-3 hover:bg-zinc-50 border border-transparent hover:border-zinc-200 rounded-xl transition duration-200 group">
+                            <span class="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">[ System //
+                                History ]</span>
+                            <h4
+                                class="font-bold text-black text-xs mt-1 leading-snug group-hover:underline group-hover:underline-offset-2 transition">
+                                Evolusi Komputasi: Transisi Mesin Kalkulasi Fisik Menuju Abstraksi Cloud
                             </h4>
                         </a>
                         <a href="artikel-linux-server.html"
@@ -231,6 +256,7 @@
         </div>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer class="relative overflow-hidden bg-zinc-950 text-zinc-500 text-xs py-16 border-t border-zinc-900">
         <div
             class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:16px_28px] pointer-events-none">
