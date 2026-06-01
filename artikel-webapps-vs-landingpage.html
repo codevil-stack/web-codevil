@@ -17,31 +17,35 @@
 
 <body class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
 
-    <!-- NAVIGATION BAR -->
-    <div class="sticky top-0 z-50 bg-zinc-50/10 backdrop-blur-md pt-3 pb-3" data-aos="fade-down"
-        data-aos-duration="800">
-        <nav
-            class="bg-zinc-950/90 backdrop-blur-2xl border border-zinc-900 rounded-2xl max-w-7xl mx-auto px-4 shadow-2xl ml-4 mr-4 xl:mx-auto">
-            <div class="px-2 py-2 flex justify-between items-center">
+    <!-- WRAPPER NAVBAR STICKY - DIUBAH MENJADI FULL WIDTH -->
+    <div class="sticky top-0 z-50 bg-black backdrop-blur-md border-b border-zinc-900 shadow-2xl"
+        data-aos="fade-down" data-aos-duration="800">
+        <!-- NAV DIUBAH: Hapus rounded, hapus max-w, hapus margin samping, ganti border -->
+        <nav class="w-full px-4 md:px-6 lg:px-10">
+            <!-- Container internal untuk menjaga konten navigasi tetap di tengah jika layar sangat lebar (opsional, tapi disarankan) -->
+            <div class="max-w-[1920px] h-[50px] mx-auto py-3 flex justify-between items-center">
 
+                <!-- LOGO SECTION -->
                 <a href="index.html"
-                    class="text-sm font-black tracking-[0.25em] text-white uppercase font-mono transition duration-300 hover:opacity-80">
-                    <img src="img/logo/evil.png" alt="CoDEVIL" class="h-[30px] md:h-[30px] object-contain">
+                    class="text-sm font-black tracking-[0.25em] text-white uppercase font-mono transition duration-300 hover:opacity-80 flex items-center">
+                    <img src="img/logo/evil.png" alt="CoDEVIL" class="h-[35px] md:h-[40px] object-contain">
                 </a>
 
+                <!-- LINKS SECTION (TENGAH) -->
                 <div
-                    class="hidden md:flex space-x-8 font-mono text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
-                    <a href="index.html#services" class="hover:text-white transition duration-200">Services //</a>
-                    <a href="index.html#portfolio" class="hover:text-white transition duration-200">Portfolio //</a>
+                    class="hidden md:flex space-x-10 font-mono text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                    <a href="index.html#services" class="hover:text-white transition duration-200 py-2">Services</a>
+                    <a href="index.html#portfolio" class="hover:text-white transition duration-200 py-2">Portfolio</a>
+                    <!-- Active Link Style -->
                     <a href="index.html#blog"
-                        class="text-white relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-white transition">Journal
-                        //</a>
-                    <a href="index.html#pricing" class="hover:text-white transition duration-200">Pricing //</a>
+                        class="text-white relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-white transition">Journal</a>
+                    <a href="index.html#pricing" class="hover:text-white transition duration-200 py-2">Pricing</a>
                 </div>
 
+                <!-- CTA BUTTON SECTION (KANAN) -->
                 <a href="index.html#contact"
-                    class="bg-white hover:bg-zinc-200 text-black px-5 py-2 rounded-xl font-bold font-mono text-[11px] tracking-wide transition duration-300 transform hover:-translate-y-0.5 shadow-md shadow-black/20">
-                    INIT_PROJECT //
+                    class="bg-white hover:bg-zinc-200 text-black px-6 py-2.5 rounded-xl font-bold font-mono text-[10px] tracking-wide transition duration-300 transform hover:-translate-y-0.5 shadow-md shadow-black/20">
+                    PROJECT
                 </a>
 
             </div>
